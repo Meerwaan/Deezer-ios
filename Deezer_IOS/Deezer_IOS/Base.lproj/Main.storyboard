@@ -4,7 +4,6 @@
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
-        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -194,7 +193,7 @@
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="filled" title="Button"/>
                                 <connections>
-                                    <action selector="TapToChangeColor:" destination="qWJ-o4-QHh" eventType="touchUpInside" id="skS-qr-Axy"/>
+                                    <action selector="Connexion:" destination="qWJ-o4-QHh" eventType="touchUpInside" id="tTa-JQ-atH"/>
                                 </connections>
                             </button>
                             <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="7Zg-uC-dLN">
@@ -208,12 +207,6 @@
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gjq-NC-0B9">
-                                <rect key="frame" x="175" y="529" width="111" height="36"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" systemColor="secondarySystemGroupedBackgroundColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="BAT-SY-9lK"/>
                         <color key="backgroundColor" red="0.13333332540000001" green="0.13333332540000001" blue="0.13333332540000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
@@ -221,8 +214,6 @@
                             <constraint firstItem="NvF-np-ENQ" firstAttribute="leading" secondItem="BAT-SY-9lK" secondAttribute="leading" constant="140" id="5IK-AJ-gOC"/>
                             <constraint firstItem="BbW-pv-vOH" firstAttribute="top" secondItem="NvF-np-ENQ" secondAttribute="bottom" constant="27" id="6rD-QT-pFq"/>
                             <constraint firstItem="7Zg-uC-dLN" firstAttribute="top" secondItem="j8l-g3-edU" secondAttribute="bottom" constant="19" id="7EC-g0-RIk"/>
-                            <constraint firstItem="gjq-NC-0B9" firstAttribute="top" secondItem="7Zg-uC-dLN" secondAttribute="bottom" constant="66.666666666666686" id="AY4-K1-6fM"/>
-                            <constraint firstItem="gjq-NC-0B9" firstAttribute="leading" secondItem="BAT-SY-9lK" secondAttribute="leading" constant="100" id="FlA-ek-ghp"/>
                             <constraint firstItem="BAT-SY-9lK" firstAttribute="trailing" secondItem="BbW-pv-vOH" secondAttribute="trailing" constant="100" id="GAS-Kp-n1F"/>
                             <constraint firstItem="BbW-pv-vOH" firstAttribute="leading" secondItem="BAT-SY-9lK" secondAttribute="leading" constant="100" id="Gh3-o0-ZIt"/>
                             <constraint firstItem="7Zg-uC-dLN" firstAttribute="leading" secondItem="BAT-SY-9lK" secondAttribute="leading" constant="100" id="Lss-bM-oSk"/>
@@ -233,7 +224,6 @@
                             <constraint firstItem="BAT-SY-9lK" firstAttribute="trailing" secondItem="j8l-g3-edU" secondAttribute="trailing" constant="100" id="fhf-72-O37"/>
                             <constraint firstItem="NvF-np-ENQ" firstAttribute="top" secondItem="BAT-SY-9lK" secondAttribute="top" constant="198" id="k3A-9K-pXu"/>
                             <constraint firstItem="BAT-SY-9lK" firstAttribute="trailing" secondItem="XG2-yK-g7V" secondAttribute="trailing" constant="159" id="nKG-v5-qnm"/>
-                            <constraint firstItem="BAT-SY-9lK" firstAttribute="trailing" secondItem="gjq-NC-0B9" secondAttribute="trailing" constant="100" id="qD5-D6-pw3"/>
                             <constraint firstItem="XG2-yK-g7V" firstAttribute="leading" secondItem="BAT-SY-9lK" secondAttribute="leading" constant="159" id="qgI-cb-XDk"/>
                             <constraint firstItem="BAT-SY-9lK" firstAttribute="trailing" secondItem="7Zg-uC-dLN" secondAttribute="trailing" constant="100" id="vgu-SE-jVg"/>
                         </constraints>
@@ -241,7 +231,6 @@
                     <navigationItem key="navigationItem" id="dQq-dk-VDQ"/>
                     <connections>
                         <outlet property="EMail" destination="7Zg-uC-dLN" id="bKA-YY-yUN"/>
-                        <outlet property="HiddenText" destination="gjq-NC-0B9" id="93B-gG-w7z"/>
                         <outlet property="Password" destination="7Zg-uC-dLN" id="lsl-tF-zor"/>
                         <outlet property="button" destination="XG2-yK-g7V" id="qc7-V2-GT5"/>
                     </connections>
@@ -249,6 +238,32 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="nb6-2Y-0JT" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="3612.9770992366412" y="239.43661971830988"/>
+        </scene>
+        <!--Home View Controller-->
+        <scene sceneID="AZi-zY-Xp4">
+            <objects>
+                <viewController storyboardIdentifier="HomePage" id="9dE-M7-tHR" customClass="HomeViewController" customModule="Deezer_IOS" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="eaD-4I-Vuj">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tabBar contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="3hn-ay-mPE">
+                                <rect key="frame" x="0.0" y="769" width="393" height="49"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <items>
+                                    <tabBarItem systemItem="search" id="NOo-zC-Owm"/>
+                                    <tabBarItem systemItem="more" id="SRR-OD-fkp"/>
+                                </items>
+                            </tabBar>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="8do-yg-OMW"/>
+                        <color key="backgroundColor" red="0.13333332540000001" green="0.13333332540000001" blue="0.13333332540000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="enA-CX-Uq5" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4657" y="247"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="06n-zS-N3i">
@@ -271,8 +286,5 @@
     </scenes>
     <resources>
         <image name="Deezer-logo" width="720" height="720"/>
-        <systemColor name="secondarySystemGroupedBackgroundColor">
-            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-        </systemColor>
     </resources>
 </document>
