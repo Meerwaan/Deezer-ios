@@ -17,6 +17,7 @@
 		D94660222923BF7E00FB6309 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D94660212923BF7E00FB6309 /* Assets.xcassets */; };
 		D94660252923BF7E00FB6309 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D94660232923BF7E00FB6309 /* LaunchScreen.storyboard */; };
 		D94D2FAC2923E38900A8FEF4 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D94D2FAB2923E38900A8FEF4 /* HomeViewController.swift */; };
+		D9C29EB129241CD700B4FA04 /* ApiManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9C29EB029241CD700B4FA04 /* ApiManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +33,7 @@
 		D94660242923BF7E00FB6309 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		D94660262923BF7E00FB6309 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D94D2FAB2923E38900A8FEF4 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		D9C29EB029241CD700B4FA04 /* ApiManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -75,6 +77,7 @@
 				D94660212923BF7E00FB6309 /* Assets.xcassets */,
 				D94660232923BF7E00FB6309 /* LaunchScreen.storyboard */,
 				D94660262923BF7E00FB6309 /* Info.plist */,
+				D9C29EB029241CD700B4FA04 /* ApiManager.swift */,
 			);
 			path = Deezer_IOS;
 			sourceTree = "<group>";
@@ -150,6 +153,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D9C29EB129241CD700B4FA04 /* ApiManager.swift in Sources */,
 				849C19F32923D79C0042B962 /* ConnexionPage.swift in Sources */,
 				D946601D2923BF7D00FB6309 /* ViewController.swift in Sources */,
 				849C19F12923D78A0042B962 /* InscriptionPage.swift in Sources */,

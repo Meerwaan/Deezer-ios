@@ -62,8 +62,8 @@
                                     <action selector="TapToSignIn:" destination="Ynn-xc-Jjb" eventType="touchUpInside" id="mTr-BL-i30"/>
                                 </connections>
                             </button>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" image="Deezer-logo" translatesAutoresizingMaskIntoConstraints="NO" id="e8v-KM-FVK">
-                                <rect key="frame" x="76" y="218" width="240" height="128"/>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="Deezer-logo" translatesAutoresizingMaskIntoConstraints="NO" id="e8v-KM-FVK">
+                                <rect key="frame" x="88" y="245" width="217" height="176"/>
                             </imageView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="La8-K6-evo"/>
@@ -72,6 +72,7 @@
                             <constraint firstItem="La8-K6-evo" firstAttribute="trailing" secondItem="NUs-LU-jxG" secondAttribute="trailing" constant="100" id="F87-4L-AZW"/>
                             <constraint firstItem="La8-K6-evo" firstAttribute="trailing" secondItem="Zat-G4-h2B" secondAttribute="trailing" constant="100" id="HML-48-gTP"/>
                             <constraint firstItem="La8-K6-evo" firstAttribute="trailing" secondItem="e8v-KM-FVK" secondAttribute="trailing" constant="77" id="a5B-t4-HoU"/>
+                            <constraint firstItem="Zat-G4-h2B" firstAttribute="top" secondItem="e8v-KM-FVK" secondAttribute="bottom" constant="50" id="aoS-OY-GJa"/>
                             <constraint firstItem="Zat-G4-h2B" firstAttribute="top" secondItem="La8-K6-evo" secondAttribute="top" constant="504" id="bY5-QQ-w89"/>
                             <constraint firstItem="e8v-KM-FVK" firstAttribute="leading" secondItem="La8-K6-evo" secondAttribute="leading" constant="76" id="ghN-aj-yK7"/>
                             <constraint firstItem="NUs-LU-jxG" firstAttribute="leading" secondItem="La8-K6-evo" secondAttribute="leading" constant="100" id="mMa-qX-XNy"/>
@@ -248,7 +249,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tabBar contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="3hn-ay-mPE">
-                                <rect key="frame" x="0.0" y="769" width="393" height="49"/>
+                                <rect key="frame" x="-1" y="769" width="394" height="48"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <items>
