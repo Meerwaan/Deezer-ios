@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="qWJ-o4-QHh">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -9,16 +10,221 @@
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Deezer_IOS" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" xcode11CocoaTouchSystemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Deezer-logo" translatesAutoresizingMaskIntoConstraints="NO" id="1w2-Dz-DgL">
+                                <rect key="frame" x="76" y="362" width="240" height="128"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" red="0.13333332540000001" green="0.13333332540000001" blue="0.13333332540000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="48" y="-2"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="6oH-eZ-qO8">
+            <objects>
+                <viewController id="Ynn-xc-Jjb" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="7IB-Qw-fsR">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Zat-G4-h2B">
+                                <rect key="frame" x="100" y="563" width="193" height="35"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="Inscription" titleAlignment="center">
+                                    <backgroundConfiguration key="background">
+                                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                    </backgroundConfiguration>
+                                    <color key="baseForegroundColor" red="0.1058823839" green="0.10588235410000001" blue="0.10588235410000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                    <color key="baseBackgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                </buttonConfiguration>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NUs-LU-jxG">
+                                <rect key="frame" x="100" y="655" width="193" height="35"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="Button">
+                                    <color key="baseForegroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <color key="baseBackgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                </buttonConfiguration>
+                            </button>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" image="Deezer-logo" translatesAutoresizingMaskIntoConstraints="NO" id="e8v-KM-FVK">
+                                <rect key="frame" x="76" y="218" width="240" height="128"/>
+                            </imageView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="La8-K6-evo"/>
+                        <color key="backgroundColor" red="0.13333332540000001" green="0.13333332540000001" blue="0.13333332540000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <constraints>
+                            <constraint firstItem="La8-K6-evo" firstAttribute="trailing" secondItem="NUs-LU-jxG" secondAttribute="trailing" constant="100" id="F87-4L-AZW"/>
+                            <constraint firstItem="La8-K6-evo" firstAttribute="trailing" secondItem="Zat-G4-h2B" secondAttribute="trailing" constant="100" id="HML-48-gTP"/>
+                            <constraint firstItem="La8-K6-evo" firstAttribute="trailing" secondItem="e8v-KM-FVK" secondAttribute="trailing" constant="77" id="a5B-t4-HoU"/>
+                            <constraint firstItem="Zat-G4-h2B" firstAttribute="top" secondItem="La8-K6-evo" secondAttribute="top" constant="504" id="bY5-QQ-w89"/>
+                            <constraint firstItem="e8v-KM-FVK" firstAttribute="leading" secondItem="La8-K6-evo" secondAttribute="leading" constant="76" id="ghN-aj-yK7"/>
+                            <constraint firstItem="NUs-LU-jxG" firstAttribute="leading" secondItem="La8-K6-evo" secondAttribute="leading" constant="100" id="mMa-qX-XNy"/>
+                            <constraint firstItem="NUs-LU-jxG" firstAttribute="top" secondItem="Zat-G4-h2B" secondAttribute="bottom" constant="57" id="yDy-JL-odX"/>
+                            <constraint firstItem="Zat-G4-h2B" firstAttribute="leading" secondItem="La8-K6-evo" secondAttribute="leading" constant="100" id="ztH-Vy-VdY"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Kxw-AC-bxV" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="868" y="-81"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="pqv-2N-aEG">
+            <objects>
+                <viewController id="j8s-Mo-iAX" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="bd6-qn-Mbc">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="19" translatesAutoresizingMaskIntoConstraints="NO" id="DhE-0U-NHn">
+                                <rect key="frame" x="100" y="291" width="193" height="34"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Adresse Mail" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5Yo-ml-z0x">
+                                <rect key="frame" x="147" y="251" width="98" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Mot de passe" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CNX-2y-MEJ">
+                                <rect key="frame" x="145" y="360" width="103" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="uPM-pd-BDy">
+                                <rect key="frame" x="100" y="409" width="193" height="34"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="2Qi-oj-fLS">
+                                <rect key="frame" x="100" y="531" width="193" height="34"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Confirmation mot de passe" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BeR-lK-9zR">
+                                <rect key="frame" x="93" y="480" width="206" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Zax-0j-SYn">
+                                <rect key="frame" x="159" y="638" width="75" height="35"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="Button"/>
+                            </button>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Deezer-logo" translatesAutoresizingMaskIntoConstraints="NO" id="b1h-5h-BQA">
+                                <rect key="frame" x="76" y="79" width="240" height="128"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="FdY-dT-62B"/>
+                        <color key="backgroundColor" red="0.13333332540000001" green="0.13333332540000001" blue="0.13333332540000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <constraints>
+                            <constraint firstItem="FdY-dT-62B" firstAttribute="trailing" secondItem="2Qi-oj-fLS" secondAttribute="trailing" constant="100" id="24H-88-RRf"/>
+                            <constraint firstItem="5Yo-ml-z0x" firstAttribute="top" secondItem="FdY-dT-62B" secondAttribute="top" constant="192" id="3yy-Jk-gVW"/>
+                            <constraint firstItem="5Yo-ml-z0x" firstAttribute="leading" secondItem="FdY-dT-62B" secondAttribute="leading" constant="147" id="5Cc-Yr-Xyb"/>
+                            <constraint firstItem="FdY-dT-62B" firstAttribute="trailing" secondItem="uPM-pd-BDy" secondAttribute="trailing" constant="100" id="S00-gj-JKD"/>
+                            <constraint firstItem="CNX-2y-MEJ" firstAttribute="top" secondItem="DhE-0U-NHn" secondAttribute="bottom" constant="35" id="SEt-20-Dcq"/>
+                            <constraint firstItem="CNX-2y-MEJ" firstAttribute="leading" secondItem="FdY-dT-62B" secondAttribute="leading" constant="145" id="VPL-K5-xVy"/>
+                            <constraint firstItem="FdY-dT-62B" firstAttribute="trailing" secondItem="DhE-0U-NHn" secondAttribute="trailing" constant="100" id="c29-3W-OO6"/>
+                            <constraint firstItem="Zax-0j-SYn" firstAttribute="top" secondItem="2Qi-oj-fLS" secondAttribute="bottom" constant="73" id="dly-TD-vmc"/>
+                            <constraint firstItem="FdY-dT-62B" firstAttribute="trailing" secondItem="CNX-2y-MEJ" secondAttribute="trailing" constant="145" id="eq1-en-sQB"/>
+                            <constraint firstItem="uPM-pd-BDy" firstAttribute="leading" secondItem="FdY-dT-62B" secondAttribute="leading" constant="100" id="jdB-wo-xPQ"/>
+                            <constraint firstItem="BeR-lK-9zR" firstAttribute="top" secondItem="uPM-pd-BDy" secondAttribute="bottom" constant="37" id="jq9-yc-fvJ"/>
+                            <constraint firstItem="FdY-dT-62B" firstAttribute="trailing" secondItem="Zax-0j-SYn" secondAttribute="trailing" constant="159" id="kwJ-hw-kxO"/>
+                            <constraint firstItem="FdY-dT-62B" firstAttribute="trailing" secondItem="BeR-lK-9zR" secondAttribute="trailing" constant="94" id="neP-Vi-cVp"/>
+                            <constraint firstItem="Zax-0j-SYn" firstAttribute="leading" secondItem="FdY-dT-62B" secondAttribute="leading" constant="159" id="omV-ix-V3Z"/>
+                            <constraint firstItem="DhE-0U-NHn" firstAttribute="top" secondItem="5Yo-ml-z0x" secondAttribute="bottom" constant="19" id="rPG-Y5-WuH"/>
+                            <constraint firstItem="2Qi-oj-fLS" firstAttribute="leading" secondItem="FdY-dT-62B" secondAttribute="leading" constant="100" id="rb3-kh-frz"/>
+                            <constraint firstItem="2Qi-oj-fLS" firstAttribute="top" secondItem="BeR-lK-9zR" secondAttribute="bottom" constant="30" id="v2r-yV-5b6"/>
+                            <constraint firstItem="DhE-0U-NHn" firstAttribute="leading" secondItem="FdY-dT-62B" secondAttribute="leading" constant="100" id="vPc-fM-omj"/>
+                            <constraint firstItem="FdY-dT-62B" firstAttribute="trailing" secondItem="5Yo-ml-z0x" secondAttribute="trailing" constant="148" id="vVe-sC-QaZ"/>
+                            <constraint firstItem="BeR-lK-9zR" firstAttribute="leading" secondItem="FdY-dT-62B" secondAttribute="leading" constant="93" id="vcM-JN-qpp"/>
+                            <constraint firstItem="uPM-pd-BDy" firstAttribute="top" secondItem="CNX-2y-MEJ" secondAttribute="bottom" constant="28" id="xbz-F1-nR6"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="we7-2m-TVc"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="C1L-Y6-Ocr" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1759.5419847328244" y="-541.54929577464793"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="6lO-z5-X2d">
+            <objects>
+                <viewController id="qWJ-o4-QHh" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="qaQ-Qw-DsM">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Adresse mail" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NvF-np-ENQ">
+                                <rect key="frame" x="140" y="257" width="113" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="BbW-pv-vOH">
+                                <rect key="frame" x="100" y="305" width="193" height="34"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XG2-yK-g7V">
+                                <rect key="frame" x="159" y="596.33333333333337" width="75" height="35"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="Button"/>
+                            </button>
+                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="7Zg-uC-dLN">
+                                <rect key="frame" x="100" y="428.33333333333331" width="193" height="34"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Mot de Passe" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="j8l-g3-edU">
+                                <rect key="frame" x="131" y="362" width="130" height="45"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="BAT-SY-9lK"/>
+                        <color key="backgroundColor" red="0.13333332540000001" green="0.13333332540000001" blue="0.13333332540000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <constraints>
+                            <constraint firstItem="NvF-np-ENQ" firstAttribute="leading" secondItem="BAT-SY-9lK" secondAttribute="leading" constant="140" id="5IK-AJ-gOC"/>
+                            <constraint firstItem="BbW-pv-vOH" firstAttribute="top" secondItem="NvF-np-ENQ" secondAttribute="bottom" constant="27" id="6rD-QT-pFq"/>
+                            <constraint firstItem="7Zg-uC-dLN" firstAttribute="top" secondItem="j8l-g3-edU" secondAttribute="bottom" constant="19" id="7EC-g0-RIk"/>
+                            <constraint firstItem="BAT-SY-9lK" firstAttribute="trailing" secondItem="BbW-pv-vOH" secondAttribute="trailing" constant="100" id="GAS-Kp-n1F"/>
+                            <constraint firstItem="BbW-pv-vOH" firstAttribute="leading" secondItem="BAT-SY-9lK" secondAttribute="leading" constant="100" id="Gh3-o0-ZIt"/>
+                            <constraint firstItem="7Zg-uC-dLN" firstAttribute="leading" secondItem="BAT-SY-9lK" secondAttribute="leading" constant="100" id="Lss-bM-oSk"/>
+                            <constraint firstItem="j8l-g3-edU" firstAttribute="leading" secondItem="BAT-SY-9lK" secondAttribute="leading" constant="100" id="Qyu-uP-9pF"/>
+                            <constraint firstItem="BAT-SY-9lK" firstAttribute="trailing" secondItem="NvF-np-ENQ" secondAttribute="trailing" constant="140" id="Rfq-hs-X55"/>
+                            <constraint firstItem="j8l-g3-edU" firstAttribute="top" secondItem="BbW-pv-vOH" secondAttribute="bottom" constant="50" id="ZuO-dw-CsB"/>
+                            <constraint firstItem="XG2-yK-g7V" firstAttribute="top" secondItem="7Zg-uC-dLN" secondAttribute="bottom" constant="134" id="bvh-8v-oN5"/>
+                            <constraint firstItem="BAT-SY-9lK" firstAttribute="trailing" secondItem="j8l-g3-edU" secondAttribute="trailing" constant="100" id="fhf-72-O37"/>
+                            <constraint firstItem="NvF-np-ENQ" firstAttribute="top" secondItem="BAT-SY-9lK" secondAttribute="top" constant="198" id="k3A-9K-pXu"/>
+                            <constraint firstItem="BAT-SY-9lK" firstAttribute="trailing" secondItem="XG2-yK-g7V" secondAttribute="trailing" constant="159" id="nKG-v5-qnm"/>
+                            <constraint firstItem="XG2-yK-g7V" firstAttribute="leading" secondItem="BAT-SY-9lK" secondAttribute="leading" constant="159" id="qgI-cb-XDk"/>
+                            <constraint firstItem="BAT-SY-9lK" firstAttribute="trailing" secondItem="7Zg-uC-dLN" secondAttribute="trailing" constant="100" id="vgu-SE-jVg"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="dQq-dk-VDQ"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="nb6-2Y-0JT" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1759.5419847328244" y="239.43661971830988"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="Deezer-logo" width="720" height="720"/>
+    </resources>
 </document>
