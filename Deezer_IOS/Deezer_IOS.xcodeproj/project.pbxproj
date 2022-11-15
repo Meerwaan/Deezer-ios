@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		849C19EF2923D7650042B962 /* LuncherPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 849C19EE2923D7650042B962 /* LuncherPage.swift */; };
+		849C19F12923D78A0042B962 /* InscriptionPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 849C19F02923D78A0042B962 /* InscriptionPage.swift */; };
+		849C19F32923D79C0042B962 /* ConnexionPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 849C19F22923D79C0042B962 /* ConnexionPage.swift */; };
 		D94660192923BF7D00FB6309 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D94660182923BF7D00FB6309 /* AppDelegate.swift */; };
 		D946601B2923BF7D00FB6309 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D946601A2923BF7D00FB6309 /* SceneDelegate.swift */; };
 		D946601D2923BF7D00FB6309 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D946601C2923BF7D00FB6309 /* ViewController.swift */; };
@@ -16,6 +19,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		849C19EE2923D7650042B962 /* LuncherPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LuncherPage.swift; sourceTree = "<group>"; };
+		849C19F02923D78A0042B962 /* InscriptionPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InscriptionPage.swift; sourceTree = "<group>"; };
+		849C19F22923D79C0042B962 /* ConnexionPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConnexionPage.swift; sourceTree = "<group>"; };
 		D94660152923BF7D00FB6309 /* Deezer_IOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Deezer_IOS.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D94660182923BF7D00FB6309 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D946601A2923BF7D00FB6309 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -59,6 +65,9 @@
 				D94660182923BF7D00FB6309 /* AppDelegate.swift */,
 				D946601A2923BF7D00FB6309 /* SceneDelegate.swift */,
 				D946601C2923BF7D00FB6309 /* ViewController.swift */,
+				849C19F22923D79C0042B962 /* ConnexionPage.swift */,
+				849C19F02923D78A0042B962 /* InscriptionPage.swift */,
+				849C19EE2923D7650042B962 /* LuncherPage.swift */,
 				D946601E2923BF7D00FB6309 /* Main.storyboard */,
 				D94660212923BF7E00FB6309 /* Assets.xcassets */,
 				D94660232923BF7E00FB6309 /* LaunchScreen.storyboard */,
@@ -138,8 +147,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				849C19F32923D79C0042B962 /* ConnexionPage.swift in Sources */,
 				D946601D2923BF7D00FB6309 /* ViewController.swift in Sources */,
+				849C19F12923D78A0042B962 /* InscriptionPage.swift in Sources */,
 				D94660192923BF7D00FB6309 /* AppDelegate.swift in Sources */,
+				849C19EF2923D7650042B962 /* LuncherPage.swift in Sources */,
 				D946601B2923BF7D00FB6309 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
