@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="5xy-kD-bQC">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="9dE-M7-tHR">
     <device id="retina6_12" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
@@ -257,14 +257,30 @@
                                     <tabBarItem systemItem="more" id="SRR-OD-fkp"/>
                                 </items>
                             </tabBar>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="In1-q5-d0d">
+                                <rect key="frame" x="112" y="108" width="168" height="168"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="168" id="2Eh-pA-HxI"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="50" id="GMx-zC-dSh"/>
+                                </constraints>
+                            </imageView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="8do-yg-OMW"/>
                         <color key="backgroundColor" red="0.13333332540000001" green="0.13333332540000001" blue="0.13333332540000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <constraints>
+                            <constraint firstItem="In1-q5-d0d" firstAttribute="leading" secondItem="8do-yg-OMW" secondAttribute="leading" constant="112" id="9ZU-Sf-isV"/>
+                            <constraint firstItem="8do-yg-OMW" firstAttribute="trailing" secondItem="In1-q5-d0d" secondAttribute="trailing" constant="113" id="Dgh-mt-b8h"/>
+                            <constraint firstItem="In1-q5-d0d" firstAttribute="top" secondItem="8do-yg-OMW" secondAttribute="top" constant="51" id="piY-an-hrK"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="ArtisteImage" destination="In1-q5-d0d" id="B3y-Ts-BpB"/>
+                        <outletCollection property="tesss" destination="In1-q5-d0d" id="8gd-fg-22l"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="enA-CX-Uq5" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4657" y="247"/>
+            <point key="canvasLocation" x="4655.7251908396947" y="246.47887323943664"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="06n-zS-N3i">
