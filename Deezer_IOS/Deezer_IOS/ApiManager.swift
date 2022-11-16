@@ -45,20 +45,45 @@ class ApiManager {
                             }
                         }
                     }
-                    
-                 
-                    
                 }
                 task.resume()
-        
-        
-        
-        
-        
-        
     }
     
-    
+    func getArtist(completionHanlder: @escaping (_ data: [Artist]) -> Void) {
+        var pictures:[Artist] = []
+        
+        let config = URLSessionConfiguration.default
+                let session = URLSession(configuration: config)
+                
+                let url = URL(string: "https://api.deezer.com/chart/0/artists")!
+                
+                let task = session.dataTask(with: url) { (data, response, error) in
+                    if error != nil {
+                        print(error!.localizedDescription)
+                    } else {
+                        if let json = try? JSONSerialization.jsonObject(with: data!, options: .mutableContainers) {
+                            if let data = json as? [String: AnyObject] {
+                                
+                                if let items = data["data"] as? [[String: AnyObject]] {
+                                    for item in items {
+                                        //print(item["link"]!)
+                                        let newArts = Artist(name: item["name"] as! String , picture: item["picture"] as! String)
+                                        pictures.append(newArts)
+                                        /* if let artist = Artist(json: item) {
+                                            self.album.append(artist)
+                                        }*/
+                                        
+                                    }
+                                    
+                                    completionHanlder(pictures)
+                                }
+                            }
+                        }
+                    }
+                }
+                task.resume()
+    }
+
 }
     
 

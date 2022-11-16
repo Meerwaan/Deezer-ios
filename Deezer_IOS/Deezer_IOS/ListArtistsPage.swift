@@ -7,12 +7,45 @@
 
 import UIKit
 
-class ListArtistsPage: UIViewController {
+class ListArtistsPage: UIViewController, UITableViewDelegate, UITableViewDataSource {
+    var artists:[Artist] = []
 
+    @IBOutlet weak var ListArtistPageView: UITableView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        ListArtistPageView.delegate = self
+        ListArtistPageView.dataSource = self
+        
+        ApiManager.shared.getArtist { data in
+            print(data)
+            self.artists = data
+            DispatchQueue.main.async {
+                self.ListArtistPageView.reloadData()
+            }
+            
+        }
         
         // Do any additional setup after loading the view.
+    }
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        self.artists.count
+    }
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        print(self.artists[indexPath.row].name)
+    }
+
+    func numberOfSections(in tableView: UITableView) -> Int {
+        return 1
+    }
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let ListArtisteCell = ListArtistPageView.dequeueReusableCell(withIdentifier: "ListArtisteCell", for: indexPath)
+        
+        ListArtisteCell.textLabel?.text = self.artists[indexPath.row].name
+        
+        return ListArtisteCell
     }
     
 
