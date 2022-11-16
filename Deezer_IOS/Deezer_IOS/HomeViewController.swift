@@ -12,17 +12,21 @@ class HomeViewController: UIViewController {
     @IBOutlet  var ArtisteImage: UIImageView!
     
     
-    @IBOutlet weak var image: UIImageView!
+   
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
-        image.layer.cornerRadius = image.frame.width/2
-        image.layer.masksToBounds = true
+        
     }
     
     
-
+    @IBAction func tapToList(_ sender: Any) {
+        let ListArtist = storyboard?.instantiateViewController(identifier: "ListArtistPage") as! ListArtistsPage
+        ListArtist.modalPresentationStyle = .fullScreen
+        present(ListArtist,animated: true)
+    }
+    
     
     
 
