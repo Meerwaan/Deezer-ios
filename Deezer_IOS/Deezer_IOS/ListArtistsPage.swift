@@ -8,7 +8,7 @@
 import UIKit
 
 class ListArtistsPage: UIViewController, UITableViewDelegate, UITableViewDataSource {
-    var artists:[Artist] = []
+    
 
     @IBOutlet weak var ListArtistPageView: UITableView!
     

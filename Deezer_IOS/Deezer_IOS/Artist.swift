@@ -9,6 +9,7 @@ import Foundation
 
 struct Artist {
     
+    var id:Int
     var name: String
     var picture: String
 }
@@ -16,15 +17,18 @@ struct Artist {
 
 extension Artist {
     init?(json: [String: AnyObject]) {
-            guard let name = json["title"] as? String,
+            guard
+                let id = json["id"] as? Int,
+                let name = json["title"] as? String,
                 let cover = json["picture"] as? String
             else {
                 return nil
             }
 
-        
+            
             self.name = name
             self.picture = cover
+            self.id = id
         
         
         }

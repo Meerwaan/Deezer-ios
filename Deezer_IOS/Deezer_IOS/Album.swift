@@ -8,7 +8,7 @@
 import Foundation
 
 struct Album {
-    
+    var id: Int
     var name: String
     var cover: String
 }
@@ -17,7 +17,8 @@ struct Album {
 extension Album {
     init?(json: [String: AnyObject]) {
             guard let name = json["title"] as? String,
-                let cover = json["cover"] as? String
+                let cover = json["cover"] as? String,
+                  let id = json["id"] as? Int
             else {
                 return nil
             }
@@ -25,6 +26,7 @@ extension Album {
         
             self.name = name
             self.cover = cover
+            self.id = id
         
         
         }
