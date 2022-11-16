@@ -14,8 +14,8 @@ class ApiManager {
         
     }
     
-    func getAlbum(completionHanlder: @escaping (_ data: [String]) -> Void) {
-        var albums:[String] = []
+    func getAlbum(completionHanlder: @escaping (_ data: [Album]) -> Void) {
+        var albums:[Album] = []
         
         let config = URLSessionConfiguration.default
                 let session = URLSession(configuration: config)
@@ -32,7 +32,8 @@ class ApiManager {
                                 if let items = data["data"] as? [[String: AnyObject]] {
                                     for item in items {
                                         //print(item["link"]!)
-                                        albums.append(item["title"]! as! String)
+                                        let newAlb = Album(name: item["title"] as! String , cover: item["cover"] as! String)
+                                        albums.append(newAlb)
                                         /* if let artist = Artist(json: item) {
                                             self.album.append(artist)
                                         }*/

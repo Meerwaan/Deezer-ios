@@ -28,7 +28,6 @@ class HomeViewController: UIViewController, UITableViewDelegate, UITableViewData
         ApiManager.shared.getAlbum { data in
             print(data)
             self.albums = data
-            
             DispatchQueue.main.async {
                 self.ArtisteTableView.reloadData()
             }
@@ -48,7 +47,7 @@ class HomeViewController: UIViewController, UITableViewDelegate, UITableViewData
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        print("test")
+        print(self.albums[indexPath.row].name)
     }
 
     func numberOfSections(in tableView: UITableView) -> Int {
