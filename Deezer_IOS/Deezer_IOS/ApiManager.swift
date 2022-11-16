@@ -4,47 +4,62 @@
 //
 //  Created by Merwan Laouini on 15/11/2022.
 //
-import Foundation
 import UIKit
 
 class ApiManager {
     
-    let ApiUrl = "http://api.deezer.com"
-    let AlbumUrl = "/album/27"
-    
-    
-    
-    
-    /*func getAlbum(completionHandler: @escaping ([Album])) -> Void {
-        let url = URL(string: ApiUrl+AlbumUrl)!
-        var albumArray = [Album]()
+   static let shared = ApiManager()
+
+    private init(){
         
-        let task = URLSession.shared.dataTask(with: url, completionHandler: {(data,response,error) in
-            if let error = error{
-                print("erreur de fetching \(error)")
-                return
-            }
-        }
-    }*/
+    }
     
-    struct Album {
-        var id: Int
-        var name: String
-        var cover: String
+    func getAlbum(completionHanlder: @escaping (_ data: [String]) -> Void) {
+        var albums:[String] = []
+        
+        let config = URLSessionConfiguration.default
+                let session = URLSession(configuration: config)
+                
+                let url = URL(string: "https://api.deezer.com/chart/0/albums")!
+                
+                let task = session.dataTask(with: url) { (data, response, error) in
+                    if error != nil {
+                        print(error!.localizedDescription)
+                    } else {
+                        if let json = try? JSONSerialization.jsonObject(with: data!, options: .mutableContainers) {
+                            if let data = json as? [String: AnyObject] {
+                                
+                                if let items = data["data"] as? [[String: AnyObject]] {
+                                    for item in items {
+                                        //print(item["link"]!)
+                                        albums.append(item["title"]! as! String)
+                                        /* if let artist = Artist(json: item) {
+                                            self.album.append(artist)
+                                        }*/
+                                        
+                                    }
+                                    
+                                    completionHanlder(albums)
+                                }
+                            }
+                        }
+                    }
+                    
+                 
+                    
+                }
+                task.resume()
+        
+        
+        
+        
+        
+        
     }
-
-    struct Artist {
-        var id: Int
-        var name: String
-        var picture: String
-    }
-
-    struct Song {
-        var preview: String
-        var title: String
-        var artistName: String
-        var albumImage: String
-        var albumName: String
-    }
-
+    
+    
 }
+    
+
+
+   

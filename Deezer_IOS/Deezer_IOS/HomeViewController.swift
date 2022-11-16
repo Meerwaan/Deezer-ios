@@ -7,16 +7,32 @@
 
 import UIKit
 
-class HomeViewController: UIViewController {
+class HomeViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
 
-    @IBOutlet  var ArtisteImage: UIImageView!
+    
+
+    var albums:[Album] = []
+    
+    @IBOutlet weak var ArtisteTableView: UITableView!
     
     
    
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        ArtisteTableView.dataSource = self
+        ArtisteTableView.delegate = self
+        
         // Do any additional setup after loading the view.
+        // allo
+        
+        ApiManager.shared.getAlbum { data in
+            print(data)
+            self.albums = data
+            
+            DispatchQueue.main.async {
+                self.ArtisteTableView.reloadData()
+            }
+        }
         
     }
     
@@ -27,7 +43,24 @@ class HomeViewController: UIViewController {
         present(ListArtist,animated: true)
     }
     
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        self.albums.count
+    }
     
-    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        print("test")
+    }
 
+    func numberOfSections(in tableView: UITableView) -> Int {
+        return 1
+    }
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let ArtisteCell = ArtisteTableView.dequeueReusableCell(withIdentifier: "ArtisteCell", for: indexPath)
+        
+        ArtisteCell.textLabel?.text = self.albums[indexPath.row].name
+        
+        return ArtisteCell
+    }
+    
 }
