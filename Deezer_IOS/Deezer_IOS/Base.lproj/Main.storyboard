@@ -464,26 +464,13 @@
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="slslsls" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="LjH-TV-4p8">
-                                <rect key="frame" x="99" y="80" width="264" height="38"/>
-                                <color key="backgroundColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <rect key="contentStretch" x="0.29999999999999999" y="0.0" width="1" height="1"/>
-                                <color key="textColor" systemColor="systemGray2Color"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="23"/>
+                            <searchBar contentMode="redraw" translatesAutoresizingMaskIntoConstraints="NO" id="cb5-hN-TIP">
+                                <rect key="frame" x="74" y="75" width="289" height="56"/>
                                 <textInputTraits key="textInputTraits"/>
-                            </textField>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Derniers titres écoutés à partir de la recherche" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qPb-Th-PGp">
-                                <rect key="frame" x="27" y="137" width="282" height="16"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="13"/>
-                                <color key="textColor" systemColor="systemGray2Color"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Recherches récentes" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ga1-yz-CC9">
-                                <rect key="frame" x="27" y="279" width="128" height="16"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="13"/>
-                                <color key="textColor" systemColor="systemGray2Color"/>
-                                <nil key="highlightedColor"/>
-                            </label>
+                                <connections>
+                                    <outlet property="delegate" destination="BpL-Gm-gja" id="GyV-R1-0Bq"/>
+                                </connections>
+                            </searchBar>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lcz-Ki-0Xs">
                                 <rect key="frame" x="26" y="80" width="50" height="35"/>
                                 <state key="normal" title="Button"/>
@@ -494,36 +481,51 @@
                                 </buttonConfiguration>
                             </button>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="6mZ-LT-rwX">
-                                <rect key="frame" x="27" y="316" width="336" height="491"/>
+                                <rect key="frame" x="27" y="150" width="336" height="619"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" textLabel="dna-bg-X8a" rowHeight="103" style="IBUITableViewCellStyleDefault" id="PC8-hX-eDq">
+                                        <rect key="frame" x="0.0" y="50" width="336" height="103"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="PC8-hX-eDq" id="DcO-lW-waH">
+                                            <rect key="frame" x="0.0" y="0.0" width="336" height="103"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="dna-bg-X8a">
+                                                    <rect key="frame" x="20" y="0.0" width="296" height="103"/>
+                                                    <autoresizingMask key="autoresizingMask"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="0.0"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </prototypes>
                             </tableView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="Pby-ko-IEX"/>
                         <color key="backgroundColor" red="0.15219128543733168" green="0.15289386678418435" blue="0.15500161082474229" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                         <constraints>
-                            <constraint firstItem="6mZ-LT-rwX" firstAttribute="top" secondItem="ga1-yz-CC9" secondAttribute="bottom" constant="21" id="3WN-0W-k6t"/>
-                            <constraint firstItem="LjH-TV-4p8" firstAttribute="leading" secondItem="lcz-Ki-0Xs" secondAttribute="trailing" constant="23" id="3ea-ab-1oo"/>
-                            <constraint firstItem="ga1-yz-CC9" firstAttribute="top" secondItem="Pby-ko-IEX" secondAttribute="top" constant="220" id="I9z-Xo-Wv0"/>
-                            <constraint firstItem="LjH-TV-4p8" firstAttribute="top" secondItem="Pby-ko-IEX" secondAttribute="top" constant="21" id="JYz-c0-wh3"/>
-                            <constraint firstItem="6mZ-LT-rwX" firstAttribute="bottom" secondItem="Pby-ko-IEX" secondAttribute="bottom" constant="38" id="Jom-NE-Bxa"/>
-                            <constraint firstItem="Pby-ko-IEX" firstAttribute="trailing" secondItem="qPb-Th-PGp" secondAttribute="trailing" constant="84" id="Qn9-R2-k9j"/>
-                            <constraint firstItem="qPb-Th-PGp" firstAttribute="top" secondItem="LjH-TV-4p8" secondAttribute="bottom" constant="19" id="X37-5M-CM2"/>
-                            <constraint firstItem="Pby-ko-IEX" firstAttribute="trailing" secondItem="ga1-yz-CC9" secondAttribute="trailing" constant="238" id="ZZR-Pk-kqU"/>
-                            <constraint firstItem="Pby-ko-IEX" firstAttribute="bottom" secondItem="qPb-Th-PGp" secondAttribute="bottom" constant="616" id="bBO-eN-BEI"/>
+                            <constraint firstItem="cb5-hN-TIP" firstAttribute="leading" secondItem="Pby-ko-IEX" secondAttribute="leading" constant="74" id="C56-1F-KWx"/>
+                            <constraint firstItem="Pby-ko-IEX" firstAttribute="trailing" secondItem="cb5-hN-TIP" secondAttribute="trailing" constant="30" id="UFB-eQ-koZ"/>
+                            <constraint firstItem="cb5-hN-TIP" firstAttribute="top" secondItem="Pby-ko-IEX" secondAttribute="top" constant="16" id="a6Y-3x-egZ"/>
+                            <constraint firstItem="6mZ-LT-rwX" firstAttribute="top" secondItem="cb5-hN-TIP" secondAttribute="bottom" constant="19" id="aeE-5Z-G7V"/>
+                            <constraint firstItem="6mZ-LT-rwX" firstAttribute="leading" secondItem="Pby-ko-IEX" secondAttribute="leading" constant="27" id="bFP-Jn-4kU"/>
+                            <constraint firstItem="Pby-ko-IEX" firstAttribute="trailing" secondItem="6mZ-LT-rwX" secondAttribute="trailing" constant="30" id="cNx-Rh-GYa"/>
                             <constraint firstItem="lcz-Ki-0Xs" firstAttribute="top" secondItem="Pby-ko-IEX" secondAttribute="top" constant="21" id="ch3-T5-7XQ"/>
+                            <constraint firstItem="6mZ-LT-rwX" firstAttribute="bottom" secondItem="Pby-ko-IEX" secondAttribute="bottom" id="gK2-bb-at2"/>
                             <constraint firstItem="6mZ-LT-rwX" firstAttribute="leading" secondItem="Pby-ko-IEX" secondAttribute="leading" constant="27" id="goB-BM-bSJ"/>
                             <constraint firstItem="lcz-Ki-0Xs" firstAttribute="leading" secondItem="Pby-ko-IEX" secondAttribute="leading" constant="26" id="lRP-eR-XYe"/>
                             <constraint firstItem="Pby-ko-IEX" firstAttribute="trailing" secondItem="6mZ-LT-rwX" secondAttribute="trailing" constant="30" id="nzR-EP-qxW"/>
-                            <constraint firstItem="qPb-Th-PGp" firstAttribute="leading" secondItem="Pby-ko-IEX" secondAttribute="leading" constant="27" id="qid-5B-Oeb"/>
-                            <constraint firstItem="ga1-yz-CC9" firstAttribute="leading" secondItem="Pby-ko-IEX" secondAttribute="leading" constant="27" id="x90-qT-ksP"/>
-                            <constraint firstItem="Pby-ko-IEX" firstAttribute="trailing" secondItem="LjH-TV-4p8" secondAttribute="trailing" constant="30" id="yh0-83-lEm"/>
+                            <constraint firstItem="Pby-ko-IEX" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="lcz-Ki-0Xs" secondAttribute="trailing" symbolic="YES" id="ss3-u4-3j8"/>
                         </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" systemItem="search" id="PzK-NS-Gu4"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Jzl-3g-pck" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="5582" y="-421"/>
+            <point key="canvasLocation" x="5580.9160305343512" y="-421.12676056338029"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="0N8-rB-bWS">
@@ -556,9 +558,6 @@
         </systemColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-        </systemColor>
-        <systemColor name="systemGray2Color">
-            <color red="0.68235294117647061" green="0.68235294117647061" blue="0.69803921568627447" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>
