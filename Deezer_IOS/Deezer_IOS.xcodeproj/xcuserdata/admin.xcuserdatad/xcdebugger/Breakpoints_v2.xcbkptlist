@@ -20,67 +20,67 @@
             landmarkType = "3">
             <Locations>
                <Location
-                  uuid = "2EFCF021-5A8F-4EB4-8FD0-76AFACB85682 - db059cd3cde26fff"
+                  uuid = "2EFCF021-5A8F-4EB4-8FD0-76AFACB85682 - 349a02faf1805240"
                   shouldBeEnabled = "Yes"
                   ignoreCount = "0"
                   continueAfterRunningActions = "No"
-                  symbolName = "Deezer_IOS.HomeViewController.image.getter : Swift.Optional&lt;__C.UIImageView&gt;"
+                  symbolName = "Deezer_IOS.HomeViewController.albums.getter : Swift.Array&lt;Deezer_IOS.Album&gt;"
                   moduleName = "Deezer_IOS"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/admin/Documents/GitHub/Deezer-ios/Deezer_IOS/Deezer_IOS/HomeViewController.swift"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "15"
-                  endingLineNumber = "15"
-                  offsetFromSymbolStart = "85">
+                  startingLineNumber = "14"
+                  endingLineNumber = "14"
+                  offsetFromSymbolStart = "90">
                </Location>
                <Location
-                  uuid = "2EFCF021-5A8F-4EB4-8FD0-76AFACB85682 - 3fb2cd0361e4f3cb"
+                  uuid = "2EFCF021-5A8F-4EB4-8FD0-76AFACB85682 - 31d2ba9cd4a6be5c"
                   shouldBeEnabled = "Yes"
                   ignoreCount = "0"
                   continueAfterRunningActions = "No"
-                  symbolName = "Deezer_IOS.HomeViewController.image.setter : Swift.Optional&lt;__C.UIImageView&gt;"
+                  symbolName = "Deezer_IOS.HomeViewController.albums.setter : Swift.Array&lt;Deezer_IOS.Album&gt;"
                   moduleName = "Deezer_IOS"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/admin/Documents/GitHub/Deezer-ios/Deezer_IOS/Deezer_IOS/HomeViewController.swift"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "15"
-                  endingLineNumber = "15"
-                  offsetFromSymbolStart = "136">
+                  startingLineNumber = "14"
+                  endingLineNumber = "14"
+                  offsetFromSymbolStart = "116">
                </Location>
                <Location
-                  uuid = "2EFCF021-5A8F-4EB4-8FD0-76AFACB85682 - d854903a32679af8"
+                  uuid = "2EFCF021-5A8F-4EB4-8FD0-76AFACB85682 - 23be0095d52b2b43"
                   shouldBeEnabled = "Yes"
                   ignoreCount = "0"
                   continueAfterRunningActions = "No"
-                  symbolName = "Deezer_IOS.HomeViewController.image.modify : Swift.Optional&lt;__C.UIImageView&gt;"
+                  symbolName = "Deezer_IOS.HomeViewController.albums.modify : Swift.Array&lt;Deezer_IOS.Album&gt;"
                   moduleName = "Deezer_IOS"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/admin/Documents/GitHub/Deezer-ios/Deezer_IOS/Deezer_IOS/HomeViewController.swift"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "15"
-                  endingLineNumber = "15"
+                  startingLineNumber = "14"
+                  endingLineNumber = "14"
                   offsetFromSymbolStart = "0">
                </Location>
                <Location
-                  uuid = "2EFCF021-5A8F-4EB4-8FD0-76AFACB85682 - fbf584b428fb3bfc"
+                  uuid = "2EFCF021-5A8F-4EB4-8FD0-76AFACB85682 - 8d19a4bfe3adc18b"
                   shouldBeEnabled = "Yes"
                   ignoreCount = "0"
                   continueAfterRunningActions = "No"
-                  symbolName = "Deezer_IOS.HomeViewController.image.modify : Swift.Optional&lt;__C.UIImageView&gt; with unmangled suffix &quot;.resume.0&quot;"
+                  symbolName = "Deezer_IOS.HomeViewController.albums.modify : Swift.Array&lt;Deezer_IOS.Album&gt; with unmangled suffix &quot;.resume.0&quot;"
                   moduleName = "Deezer_IOS"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/admin/Documents/GitHub/Deezer-ios/Deezer_IOS/Deezer_IOS/HomeViewController.swift"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "15"
-                  endingLineNumber = "15"
-                  offsetFromSymbolStart = "26">
+                  startingLineNumber = "14"
+                  endingLineNumber = "14"
+                  offsetFromSymbolStart = "15">
                </Location>
                <Location
-                  uuid = "2EFCF021-5A8F-4EB4-8FD0-76AFACB85682 - 2cbce812af1e6c58"
+                  uuid = "2EFCF021-5A8F-4EB4-8FD0-76AFACB85682 - 2cbce812af1e6c39"
                   shouldBeEnabled = "Yes"
                   ignoreCount = "0"
                   continueAfterRunningActions = "No"
@@ -90,12 +90,12 @@
                   urlString = "file:///Users/admin/Documents/GitHub/Deezer-ios/Deezer_IOS/Deezer_IOS/HomeViewController.swift"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "15"
-                  endingLineNumber = "15"
-                  offsetFromSymbolStart = "152">
+                  startingLineNumber = "14"
+                  endingLineNumber = "14"
+                  offsetFromSymbolStart = "121">
                </Location>
                <Location
-                  uuid = "2EFCF021-5A8F-4EB4-8FD0-76AFACB85682 - a076b3c95e9dd01c"
+                  uuid = "2EFCF021-5A8F-4EB4-8FD0-76AFACB85682 - a076b3c95e9dd07d"
                   shouldBeEnabled = "Yes"
                   ignoreCount = "0"
                   continueAfterRunningActions = "No"
@@ -105,9 +105,9 @@
                   urlString = "file:///Users/admin/Documents/GitHub/Deezer-ios/Deezer_IOS/Deezer_IOS/HomeViewController.swift"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "15"
-                  endingLineNumber = "15"
-                  offsetFromSymbolStart = "109">
+                  startingLineNumber = "14"
+                  endingLineNumber = "14"
+                  offsetFromSymbolStart = "78">
                </Location>
             </Locations>
          </BreakpointContent>

@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		848736FC29253CAB00592FAF /* Track.swift in Sources */ = {isa = PBXBuildFile; fileRef = 848736FB29253CAB00592FAF /* Track.swift */; };
 		849C19EF2923D7650042B962 /* LuncherPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 849C19EE2923D7650042B962 /* LuncherPage.swift */; };
 		849C19F12923D78A0042B962 /* InscriptionPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 849C19F02923D78A0042B962 /* InscriptionPage.swift */; };
 		849C19F32923D79C0042B962 /* ConnexionPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 849C19F22923D79C0042B962 /* ConnexionPage.swift */; };
@@ -25,6 +26,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		848736FB29253CAB00592FAF /* Track.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Track.swift; sourceTree = "<group>"; };
 		849C19EE2923D7650042B962 /* LuncherPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LuncherPage.swift; sourceTree = "<group>"; };
 		849C19F02923D78A0042B962 /* InscriptionPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InscriptionPage.swift; sourceTree = "<group>"; };
 		849C19F22923D79C0042B962 /* ConnexionPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConnexionPage.swift; sourceTree = "<group>"; };
@@ -90,6 +92,7 @@
 				D91EF4DC2924FAB900450FD6 /* Album.swift */,
 				8F74DCEC292527FB002C4113 /* Artist.swift */,
 				D91EF4E0292535C400450FD6 /* SearchViewController.swift */,
+				848736FB29253CAB00592FAF /* Track.swift */,
 			);
 			path = Deezer_IOS;
 			sourceTree = "<group>";
@@ -175,6 +178,7 @@
 				849C19EF2923D7650042B962 /* LuncherPage.swift in Sources */,
 				D94D2FAC2923E38900A8FEF4 /* HomeViewController.swift in Sources */,
 				D91EF4DD2924FAB900450FD6 /* Album.swift in Sources */,
+				848736FC29253CAB00592FAF /* Track.swift in Sources */,
 				D946601B2923BF7D00FB6309 /* SceneDelegate.swift in Sources */,
 				8F349197292460EF00F4C779 /* ListArtistsPage.swift in Sources */,
 			);

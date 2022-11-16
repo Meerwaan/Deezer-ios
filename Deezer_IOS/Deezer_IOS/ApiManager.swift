@@ -83,6 +83,45 @@ class ApiManager {
                 }
                 task.resume()
     }
+    func getTracks(completionHanlder: @escaping (_ data: [Track]) -> Void, id: String) {
+            var albums:[Track] = []
+
+            let config = URLSessionConfiguration.default
+                    let session = URLSession(configuration: config)
+
+            let url = URL(string: "https://api.deezer.com/album/"+id+"/tracks")!
+
+                    let task = session.dataTask(with: url) { (data, response, error) in
+                        if error != nil {
+                            print(error!.localizedDescription)
+                        } else {
+                            if let json = try? JSONSerialization.jsonObject(with: data!, options: .mutableContainers) {
+                                if let data = json as? [String: AnyObject] {
+
+                                    if let items = data["data"] as? [[String: AnyObject]] {
+                                        for item in items {
+                                            //print(item["link"]!)
+                                            let newAlb = Track(name: item["title"] as! String , preview: item["preview"] as! String)
+                                            albums.append(newAlb)
+                                            /* if let artist = Artist(json: item) {
+                                                self.album.append(artist)
+                                            }*/
+
+                                        }
+
+                                        completionHanlder(albums)
+                                    }
+                                }
+                            }
+                        }
+
+
+
+                    }
+                    task.resume()
+
+
+        }
 
 }
     
