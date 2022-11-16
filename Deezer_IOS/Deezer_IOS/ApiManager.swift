@@ -15,7 +15,7 @@ class ApiManager {
     
     
     
-    func getAlbum(completionHandler: @escaping ([Album])) -> Void {
+    /*func getAlbum(completionHandler: @escaping ([Album])) -> Void {
         let url = URL(string: ApiUrl+AlbumUrl)!
         var albumArray = [Album]()
         
@@ -25,7 +25,7 @@ class ApiManager {
                 return
             }
         }
-    }
+    }*/
     
     struct Album {
         var id: Int
