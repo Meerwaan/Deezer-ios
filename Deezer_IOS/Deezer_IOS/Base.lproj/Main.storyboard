@@ -40,7 +40,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Zat-G4-h2B">
-                                <rect key="frame" x="100" y="607" width="193" height="35"/>
+                                <rect key="frame" x="100" y="563" width="193" height="35"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="filled" title="Inscription" titleAlignment="center">
                                     <backgroundConfiguration key="background">
@@ -54,7 +54,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NUs-LU-jxG">
-                                <rect key="frame" x="100" y="699" width="193" height="35"/>
+                                <rect key="frame" x="100" y="655" width="193" height="35"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="filled" title="Connexion">
                                     <color key="baseForegroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -249,7 +249,7 @@
             </objects>
             <point key="canvasLocation" x="3612.9770992366412" y="239.43661971830988"/>
         </scene>
-        <!--Item-->
+        <!--Home View Controller-->
         <scene sceneID="AZi-zY-Xp4">
             <objects>
                 <viewController storyboardIdentifier="HomePage" id="9dE-M7-tHR" customClass="HomeViewController" customModule="Deezer_IOS" customModuleProvider="target" sceneMemberID="viewController">
@@ -258,7 +258,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Découvrir " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oPv-di-qCN">
-                                <rect key="frame" x="16" y="142" width="155" height="36"/>
+                                <rect key="frame" x="16" y="740" width="155" height="36"/>
                                 <fontDescription key="fontDescription" type="system" weight="black" pointSize="30"/>
                                 <color key="textColor" systemColor="systemBackgroundColor"/>
                                 <nil key="highlightedColor"/>
@@ -340,7 +340,7 @@
                             <constraint firstItem="T03-lx-gOX" firstAttribute="leading" secondItem="8do-yg-OMW" secondAttribute="leading" constant="303" id="zob-fX-Yyh"/>
                         </constraints>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Item" id="J44-ol-PD9"/>
+                    <tabBarItem key="tabBarItem" systemItem="featured" id="J44-ol-PD9"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="enA-CX-Uq5" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -391,25 +391,7 @@
             </objects>
             <point key="canvasLocation" x="6289.3129770992364" y="245.77464788732397"/>
         </scene>
-        <!--Navigation Controller-->
-        <scene sceneID="06n-zS-N3i">
-            <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="5xy-kD-bQC" sceneMemberID="viewController">
-                    <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="KwU-pz-RhI">
-                        <rect key="frame" x="0.0" y="59" width="393" height="44"/>
-                        <autoresizingMask key="autoresizingMask"/>
-                    </navigationBar>
-                    <nil name="viewControllers"/>
-                    <connections>
-                        <segue destination="Ynn-xc-Jjb" kind="relationship" relationship="rootViewController" id="mnr-4R-Qiq"/>
-                    </connections>
-                </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="0yQ-mY-Q5Q" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="1794.6564885496182" y="-81.690140845070431"/>
-        </scene>
-        <!--Item-->
+        <!--Search View Controller-->
         <scene sceneID="WEI-eW-XbP">
             <objects>
                 <viewController id="BpL-Gm-gja" customClass="SearchViewController" sceneMemberID="viewController">
@@ -472,7 +454,7 @@
                             <constraint firstItem="Pby-ko-IEX" firstAttribute="trailing" secondItem="LjH-TV-4p8" secondAttribute="trailing" constant="30" id="yh0-83-lEm"/>
                         </constraints>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Item" id="PzK-NS-Gu4"/>
+                    <tabBarItem key="tabBarItem" systemItem="search" id="PzK-NS-Gu4"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Jzl-3g-pck" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -484,6 +466,7 @@
                 <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="3E5-HG-igN" sceneMemberID="viewController">
                     <toolbarItems/>
                     <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="2Vw-kf-eJw">
+                        <rect key="frame" x="0.0" y="0.0" width="1000" height="1000"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </tabBar>

@@ -18,12 +18,12 @@ class LuncherPage: UIViewController {
      @IBAction func TapToSignUp(_ sender: Any) {
          let inscriptionView = storyboard?.instantiateViewController(identifier: "Inscription") as! InscriptionPage
          inscriptionView.modalPresentationStyle = .fullScreen
-         navigationController?.pushViewController(inscriptionView,animated: true)
+         present(inscriptionView,animated: true)
      }
 
     @IBAction func TapToSignIn(_ sender: Any) {
         let ConnexionView = storyboard?.instantiateViewController(identifier: "Connexion") as! ConnexionPage
         ConnexionView.modalPresentationStyle = .fullScreen
-        navigationController?.pushViewController(ConnexionView,animated: true)
+        present(ConnexionView,animated: true)
     }
 }
