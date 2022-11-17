@@ -54,7 +54,7 @@ class ApiManager {
         task.resume()
     }
     
-    func fetchArtists(searchText:String ,completion: @escaping (_ data : [Artist], _ error: Error?) -> Void){
+    func fetchArtists(searchText:String ,completionHandler: @escaping (_ data : [Artist], _ error: Error?) -> Void){
         let strUrl = "\(baseURL)search/artist?q=" + searchText
         let url = URL(string: strUrl)!
         let config = URLSessionConfiguration.default
@@ -78,7 +78,7 @@ class ApiManager {
                             //print(artist)
                             self.artistsArray.append(artiste)
                         }
-                        //print(artistsArray)
+                        completionHandler(self.artistsArray, error) //print(artistsArray)
                     }
                 }
             }

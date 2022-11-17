@@ -60,7 +60,6 @@ class DetailsAlbumViewController: UIViewController, UITableViewDelegate, UITable
   
 
 }
-
 extension UIImageView {
     func downloaded(from url: URL, contentMode mode: UIView.ContentMode = .scaleAspectFit) {
         contentMode = mode
@@ -81,3 +80,5 @@ extension UIImageView {
         downloaded(from: url, contentMode: mode)
     }
 }
+
+
