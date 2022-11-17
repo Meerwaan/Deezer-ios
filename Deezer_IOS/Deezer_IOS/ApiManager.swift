@@ -86,7 +86,7 @@ class ApiManager {
         task.resume()
     }
     
-    func fetchAlbumsFromArtistId(id: Int,completion: @escaping (_ data : [Album], _ error: Error?) -> Void) -> Void {
+    func fetchAlbumsFromArtistId(id: Int,completionHandler: @escaping (_ data : [Album], _ error: Error?) -> Void) -> Void {
         
         var albumsArray = [Album]()
         
@@ -108,11 +108,11 @@ class ApiManager {
                             
                             let title = item["title"] as? String
                             let cover = item["cover"] as? String
-                            
-                            let myAlbum = Album( id: id, title: title!, cover: cover!)
+                            let id = item["id"] as? Int
+                            let myAlbum = Album( id: id!, title: title!, cover: cover!)
                             albumsArray.append(myAlbum)
                         }
-                        completion(albumsArray, error)
+                        completionHandler(albumsArray, error)
                         
                     }
                 }

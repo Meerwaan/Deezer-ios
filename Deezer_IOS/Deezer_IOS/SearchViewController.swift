@@ -39,6 +39,12 @@ class SearchViewController: UIViewController, UITableViewDelegate,UITableViewDat
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        let artist = storyboard?.instantiateViewController(identifier: "DetailsArtist") as! DetailsArtistViewController
+        artist.modalPresentationStyle = .fullScreen
+        artist.id = self.artist[indexPath.row].id
+        artist.name = self.artist[indexPath.row].name
+        artist.image = self.artist[indexPath.row].picture
+        present(artist,animated: true)
     }
 
     func numberOfSections(in tableView: UITableView) -> Int {

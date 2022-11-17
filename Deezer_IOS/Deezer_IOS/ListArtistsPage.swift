@@ -33,7 +33,12 @@ class ListArtistsPage: UIViewController, UITableViewDelegate, UITableViewDataSou
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        print(self.artists[indexPath.row].name)
+        let artist = storyboard?.instantiateViewController(identifier: "DetailsArtist") as! DetailsArtistViewController
+        artist.modalPresentationStyle = .fullScreen
+        artist.id = self.artists[indexPath.row].id
+        artist.name = self.artists[indexPath.row].name
+        artist.image = self.artists[indexPath.row].picture
+        present(artist,animated: true)
     }
 
     func numberOfSections(in tableView: UITableView) -> Int {

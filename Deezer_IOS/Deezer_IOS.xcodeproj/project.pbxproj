@@ -17,6 +17,7 @@
 		849C19EF2923D7650042B962 /* LuncherPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 849C19EE2923D7650042B962 /* LuncherPage.swift */; };
 		849C19F12923D78A0042B962 /* InscriptionPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 849C19F02923D78A0042B962 /* InscriptionPage.swift */; };
 		849C19F32923D79C0042B962 /* ConnexionPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 849C19F22923D79C0042B962 /* ConnexionPage.swift */; };
+		84B9D0362926D30C0086C95E /* DetailsArtistViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84B9D0352926D30C0086C95E /* DetailsArtistViewController.swift */; };
 		8F349197292460EF00F4C779 /* ListArtistsPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F349196292460EF00F4C779 /* ListArtistsPage.swift */; };
 		8F74DCED292527FB002C4113 /* Artist.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F74DCEC292527FB002C4113 /* Artist.swift */; };
 		D91EF4DD2924FAB900450FD6 /* Album.swift in Sources */ = {isa = PBXBuildFile; fileRef = D91EF4DC2924FAB900450FD6 /* Album.swift */; };
@@ -41,6 +42,7 @@
 		849C19EE2923D7650042B962 /* LuncherPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LuncherPage.swift; sourceTree = "<group>"; };
 		849C19F02923D78A0042B962 /* InscriptionPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InscriptionPage.swift; sourceTree = "<group>"; };
 		849C19F22923D79C0042B962 /* ConnexionPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConnexionPage.swift; sourceTree = "<group>"; };
+		84B9D0352926D30C0086C95E /* DetailsArtistViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsArtistViewController.swift; sourceTree = "<group>"; };
 		8F349196292460EF00F4C779 /* ListArtistsPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListArtistsPage.swift; sourceTree = "<group>"; };
 		8F74DCEC292527FB002C4113 /* Artist.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Artist.swift; sourceTree = "<group>"; };
 		D91EF4DC2924FAB900450FD6 /* Album.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Album.swift; sourceTree = "<group>"; };
@@ -108,6 +110,7 @@
 				848320AB2926A46900DBB876 /* SearchViewController.swift */,
 				848320AF2926B14500DBB876 /* SearchTableViewCell.swift */,
 				848320B02926B14500DBB876 /* SearchTableViewCell.xib */,
+				84B9D0352926D30C0086C95E /* DetailsArtistViewController.swift */,
 			);
 			path = Deezer_IOS;
 			sourceTree = "<group>";
@@ -184,6 +187,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				84B9D0362926D30C0086C95E /* DetailsArtistViewController.swift in Sources */,
 				8472ED86292646C400B4B2E0 /* DetailsAlbumViewController.swift in Sources */,
 				D9C29EB129241CD700B4FA04 /* ApiManager.swift in Sources */,
 				849C19F32923D79C0042B962 /* ConnexionPage.swift in Sources */,
