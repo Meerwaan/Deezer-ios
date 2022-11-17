@@ -54,6 +54,7 @@ class DetailsArtistViewController: UIViewController,UITableViewDelegate, UITable
         let ArtistCell = ArtistTableView.dequeueReusableCell(withIdentifier: "ArtistCell", for: indexPath)
         
         ArtistCell.textLabel?.text = self.albums[indexPath.row].title
+        ArtistCell.textLabel?.textColor = UIColor.white
         
         return ArtistCell
     }

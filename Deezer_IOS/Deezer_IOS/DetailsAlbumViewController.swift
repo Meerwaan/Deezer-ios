@@ -52,6 +52,7 @@ class DetailsAlbumViewController: UIViewController, UITableViewDelegate, UITable
         let DetailsAlbumCell = DetailsAlbumTableView.dequeueReusableCell(withIdentifier: "DetailsAlbumCell", for: indexPath)
         
         DetailsAlbumCell.textLabel?.text = self.DetailsAlbum[indexPath.row].title
+        DetailsAlbumCell.textLabel?.textColor = UIColor.white
         
         return DetailsAlbumCell
     }

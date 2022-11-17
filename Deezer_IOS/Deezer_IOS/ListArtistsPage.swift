@@ -49,6 +49,8 @@ class ListArtistsPage: UIViewController, UITableViewDelegate, UITableViewDataSou
         let ListArtisteCell = ListArtistPageView.dequeueReusableCell(withIdentifier: "ListArtisteCell", for: indexPath)
         
         ListArtisteCell.textLabel?.text = self.artists[indexPath.row].name
+        ListArtisteCell.textLabel?.textColor = UIColor.white
+
         
         return ListArtisteCell
     }
