@@ -25,6 +25,7 @@
 		D94660252923BF7E00FB6309 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D94660232923BF7E00FB6309 /* LaunchScreen.storyboard */; };
 		D94D2FAC2923E38900A8FEF4 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D94D2FAB2923E38900A8FEF4 /* HomeViewController.swift */; };
 		D9C29EB129241CD700B4FA04 /* ApiManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9C29EB029241CD700B4FA04 /* ApiManager.swift */; };
+		D9FD0AD8292670F1008E0894 /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9FD0AD7292670F1008E0894 /* SearchViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -48,6 +49,7 @@
 		D94660262923BF7E00FB6309 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D94D2FAB2923E38900A8FEF4 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		D9C29EB029241CD700B4FA04 /* ApiManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiManager.swift; sourceTree = "<group>"; };
+		D9FD0AD7292670F1008E0894 /* SearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,6 +101,7 @@
 				8472ED85292646C400B4B2E0 /* DetailsAlbumViewController.swift */,
 				8472ED8729264BF700B4B2E0 /* Song.swift */,
 				8472ED89292656A700B4B2E0 /* LunchSongViewController.swift */,
+				D9FD0AD7292670F1008E0894 /* SearchViewController.swift */,
 			);
 			path = Deezer_IOS;
 			sourceTree = "<group>";
@@ -184,6 +187,7 @@
 				8472ED8A292656A700B4B2E0 /* LunchSongViewController.swift in Sources */,
 				849C19EF2923D7650042B962 /* LuncherPage.swift in Sources */,
 				8472ED8829264BF700B4B2E0 /* Song.swift in Sources */,
+				D9FD0AD8292670F1008E0894 /* SearchViewController.swift in Sources */,
 				D94D2FAC2923E38900A8FEF4 /* HomeViewController.swift in Sources */,
 				D91EF4DD2924FAB900450FD6 /* Album.swift in Sources */,
 				848736FC29253CAB00592FAF /* Track.swift in Sources */,
