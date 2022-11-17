@@ -33,6 +33,13 @@ class DetailsArtistViewController: UIViewController,UITableViewDelegate, UITable
     }
     
 
+    @IBAction func TapToBack(_ sender: Any) {
+        let storyboard = UIStoryboard(name: "Main", bundle: nil)
+                let mainTabBarController = storyboard.instantiateViewController(identifier: "MainTabBarController")
+                mainTabBarController.modalPresentationStyle = .fullScreen
+                
+                self.present(mainTabBarController, animated: true, completion: nil)
+    }
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         self.albums.count
     }
