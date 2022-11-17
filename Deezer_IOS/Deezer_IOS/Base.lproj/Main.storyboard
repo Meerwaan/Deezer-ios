@@ -527,7 +527,7 @@
                                 <rect key="frame" x="27" y="150" width="336" height="619"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" textLabel="dna-bg-X8a" rowHeight="103" style="IBUITableViewCellStyleDefault" id="PC8-hX-eDq">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="SearchCell" textLabel="dna-bg-X8a" rowHeight="103" style="IBUITableViewCellStyleDefault" id="PC8-hX-eDq">
                                         <rect key="frame" x="0.0" y="50" width="336" height="103"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="PC8-hX-eDq" id="DcO-lW-waH">
@@ -564,6 +564,8 @@
                             <constraint firstItem="Pby-ko-IEX" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="lcz-Ki-0Xs" secondAttribute="trailing" symbolic="YES" id="ss3-u4-3j8"/>
                         </constraints>
                         <connections>
+                            <outlet property="Search" destination="cb5-hN-TIP" id="9FH-cj-r9X"/>
+                            <outlet property="SearchTableView" destination="6mZ-LT-rwX" id="yPX-6r-mQB"/>
                             <outlet property="searchbar" destination="cb5-hN-TIP" id="koU-xl-T4b"/>
                         </connections>
                     </view>
