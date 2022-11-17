@@ -47,7 +47,10 @@ class HomeViewController: UIViewController, UITableViewDelegate, UITableViewData
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        print(self.albums[indexPath.row].title)
+        let DetailsAlbum = storyboard?.instantiateViewController(identifier: "DetailsAlbum") as! DetailsAlbumViewController
+        DetailsAlbum.modalPresentationStyle = .fullScreen
+        DetailsAlbum.id = self.albums[indexPath.row].id
+        present(DetailsAlbum,animated: true)
     }
 
     func numberOfSections(in tableView: UITableView) -> Int {

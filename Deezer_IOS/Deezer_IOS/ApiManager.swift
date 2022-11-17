@@ -129,7 +129,7 @@ class ApiManager {
     }
     
     
-    func fetchTracksFromAlbumId(id:Int, completion: @escaping (_ data : [Song], _ error: Error?) -> Void) -> Void {
+    func fetchTracksFromAlbumId(id:Int, completionHandler: @escaping (_ data : [Song], _ error: Error?) -> Void) -> Void {
         var tracksArray = [Song]()
         
         let config = URLSessionConfiguration.default
@@ -159,7 +159,7 @@ class ApiManager {
                             }
                         }
                         
-                        completion(tracksArray, error)
+                        completionHandler(tracksArray, error)
                         
                     }
                 }
@@ -239,11 +239,5 @@ class ApiManager {
     
     
     
-    struct Song {
-        var preview: String
-        var title: String
-        var artistName: String
-        var albumImage: String
-        var albumName: String
-    }
+   
 }

@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8472ED86292646C400B4B2E0 /* DetailsAlbumViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8472ED85292646C400B4B2E0 /* DetailsAlbumViewController.swift */; };
+		8472ED8829264BF700B4B2E0 /* Song.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8472ED8729264BF700B4B2E0 /* Song.swift */; };
 		848736FC29253CAB00592FAF /* Track.swift in Sources */ = {isa = PBXBuildFile; fileRef = 848736FB29253CAB00592FAF /* Track.swift */; };
 		849C19EF2923D7650042B962 /* LuncherPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 849C19EE2923D7650042B962 /* LuncherPage.swift */; };
 		849C19F12923D78A0042B962 /* InscriptionPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 849C19F02923D78A0042B962 /* InscriptionPage.swift */; };
@@ -26,6 +28,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		8472ED85292646C400B4B2E0 /* DetailsAlbumViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsAlbumViewController.swift; sourceTree = "<group>"; };
+		8472ED8729264BF700B4B2E0 /* Song.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Song.swift; sourceTree = "<group>"; };
 		848736FB29253CAB00592FAF /* Track.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Track.swift; sourceTree = "<group>"; };
 		849C19EE2923D7650042B962 /* LuncherPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LuncherPage.swift; sourceTree = "<group>"; };
 		849C19F02923D78A0042B962 /* InscriptionPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InscriptionPage.swift; sourceTree = "<group>"; };
@@ -93,6 +97,8 @@
 				8F74DCEC292527FB002C4113 /* Artist.swift */,
 				D91EF4E0292535C400450FD6 /* SearchViewController.swift */,
 				848736FB29253CAB00592FAF /* Track.swift */,
+				8472ED85292646C400B4B2E0 /* DetailsAlbumViewController.swift */,
+				8472ED8729264BF700B4B2E0 /* Song.swift */,
 			);
 			path = Deezer_IOS;
 			sourceTree = "<group>";
@@ -168,6 +174,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8472ED86292646C400B4B2E0 /* DetailsAlbumViewController.swift in Sources */,
 				D9C29EB129241CD700B4FA04 /* ApiManager.swift in Sources */,
 				849C19F32923D79C0042B962 /* ConnexionPage.swift in Sources */,
 				D946601D2923BF7D00FB6309 /* ViewController.swift in Sources */,
@@ -176,6 +183,7 @@
 				8F74DCED292527FB002C4113 /* Artist.swift in Sources */,
 				D91EF4E1292535C400450FD6 /* SearchViewController.swift in Sources */,
 				849C19EF2923D7650042B962 /* LuncherPage.swift in Sources */,
+				8472ED8829264BF700B4B2E0 /* Song.swift in Sources */,
 				D94D2FAC2923E38900A8FEF4 /* HomeViewController.swift in Sources */,
 				D91EF4DD2924FAB900450FD6 /* Album.swift in Sources */,
 				848736FC29253CAB00592FAF /* Track.swift in Sources */,

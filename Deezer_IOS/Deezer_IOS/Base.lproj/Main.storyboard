@@ -336,10 +336,10 @@
             </objects>
             <point key="canvasLocation" x="5582.4427480916029" y="246.47887323943664"/>
         </scene>
-        <!--View Controller-->
+        <!--Details Album View Controller-->
         <scene sceneID="Gsv-qO-ip3">
             <objects>
-                <viewController id="S99-4G-vTH" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="DetailsAlbum" id="S99-4G-vTH" customClass="DetailsAlbumViewController" customModule="Deezer_IOS" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="mpr-yX-i0P">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -354,7 +354,7 @@
                                 <rect key="frame" x="7" y="288" width="378" height="504"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" id="2gc-d7-8uE">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="DetailsAlbumCell" id="2gc-d7-8uE">
                                         <rect key="frame" x="0.0" y="50" width="378" height="43.666667938232422"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="2gc-d7-8uE" id="BSP-XZ-HN5">
@@ -364,9 +364,9 @@
                                     </tableViewCell>
                                 </prototypes>
                             </tableView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7EO-Rf-WZr">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7EO-Rf-WZr">
                                 <rect key="frame" x="155" y="183" width="82.333333333333343" height="36"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="35"/>
+                                <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="35"/>
                                 <color key="textColor" systemColor="systemBackgroundColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
@@ -394,6 +394,12 @@
                             <constraint firstItem="6Bm-zd-Tsr" firstAttribute="trailing" secondItem="7EO-Rf-WZr" secondAttribute="trailing" constant="155.66666666666666" id="zRn-LV-POT"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="AlbumCover" destination="LlQ-Nf-X83" id="Aah-rs-48o"/>
+                        <outlet property="DetailsAlbumTableView" destination="4aR-fD-xOh" id="Vq2-rQ-67H"/>
+                        <outlet property="NomArtist" destination="8la-dq-M2n" id="H6Y-S0-13w"/>
+                        <outlet property="TitreAlbum" destination="7EO-Rf-WZr" id="Anp-HH-vMd"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4Zt-dL-Zne" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
