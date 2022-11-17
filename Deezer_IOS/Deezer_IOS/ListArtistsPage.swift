@@ -9,7 +9,7 @@ import UIKit
 
 class ListArtistsPage: UIViewController, UITableViewDelegate, UITableViewDataSource {
     
-
+    var artists:[Artist] = [] 
     @IBOutlet weak var ListArtistPageView: UITableView!
     
     override func viewDidLoad() {
@@ -17,9 +17,9 @@ class ListArtistsPage: UIViewController, UITableViewDelegate, UITableViewDataSou
         ListArtistPageView.delegate = self
         ListArtistPageView.dataSource = self
         
-        ApiManager.shared.getArtist { data in
+        ApiManager.shared.fetchAllArtists { data in
             print(data)
-            self.artists = data
+            self.artists=data
             DispatchQueue.main.async {
                 self.ListArtistPageView.reloadData()
             }

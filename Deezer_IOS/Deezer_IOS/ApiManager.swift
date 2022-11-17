@@ -9,10 +9,11 @@ import Foundation
 import UIKit
 
 class ApiManager {
-    
+    static let shared = ApiManager()
     let baseURL = "https://api.deezer.com/"
     var urlAlbum = "album/302127"
     var artistsArray = [Artist]()
+    var albumsArray = [Album]()
     
     
     
@@ -24,7 +25,7 @@ class ApiManager {
         }
         return image!
     }
-
+    
     func fetchTracksFromArtists(searchText: String ,completion: @escaping (_ data : [Song], _ error: Error?) -> Void){
         var tracksArray = [Song]()
         let strUrl = "\(baseURL)search?q=" + searchText
@@ -78,15 +79,13 @@ class ApiManager {
                             let name = item["name"] as? String
                             let id = item["id"] as? Int
                             let picture = item["picture"] as? String
-
+                            
                             
                             let artiste = Artist(id: id! , name: name!, picture: picture!)
                             //print(artist)
                             self.artistsArray.append(artiste)
                         }
                         //print(artistsArray)
-                        completion(self.artistsArray, error)
-                        
                     }
                 }
             }
@@ -117,7 +116,7 @@ class ApiManager {
                             let title = item["title"] as? String
                             let cover = item["cover"] as? String
                             
-                            let myAlbum = Album( id: id, name: title!, cover: cover!)
+                            let myAlbum = Album( id: id, title: title!, cover: cover!)
                             albumsArray.append(myAlbum)
                         }
                         completion(albumsArray, error)
@@ -155,12 +154,79 @@ class ApiManager {
                                     
                                     let song = Song(preview: preview!, title: title!, artistName: artistName!, albumImage: data["cover"] as! String, albumName: data["title"] as! String)
                                     tracksArray.append(song)
-
+                                    
                                 }
                             }
                         }
-        
+                        
                         completion(tracksArray, error)
+                        
+                    }
+                }
+            }
+        }
+        task.resume()
+    }
+    
+    func fetchAllArtists(completion: @escaping (_ data: [Artist]) -> Void){
+        let strUrl = "\(baseURL)chart/0/artists"
+        let url = URL(string: strUrl)!
+        let config = URLSessionConfiguration.default
+        let session = URLSession(configuration: config)
+        
+        let task = URLSession.shared.dataTask(with: url) {
+            (data, response, error) in
+            if error != nil {
+                print(error?.localizedDescription ?? "error")
+            } else {
+                if let json = try? JSONSerialization.jsonObject(with: data!, options: []){
+                    if let data = json as? [String:AnyObject] {
+                        let trueData = data["data"] as? [[String:AnyObject]]
+                        //print(trueData)
+                        for item in trueData! {
+                            let name = item["name"] as? String
+                            let id = item["id"] as? Int
+                            let picture = item["picture"] as? String
+                            
+                            
+                            let artiste = Artist(id: id! , name: name!, picture: picture!)
+                            print(artiste)
+                            self.artistsArray.append(artiste)
+                        }
+                        
+                    }
+                }
+            }
+            
+        }
+        task.resume()
+    }
+    func fetchAllAlbums(completionHanlder: @escaping (_ data: [Album]) -> Void){
+        let strUrl = "\(baseURL)chart/0/albums"
+        let url = URL(string: strUrl)!
+        let config = URLSessionConfiguration.default
+        let session = URLSession(configuration: config)
+        
+        let task = URLSession.shared.dataTask(with: url) { (data, response, error) in
+            if error != nil {
+                print(error?.localizedDescription ?? "error")
+            } else {
+                if let json = try? JSONSerialization.jsonObject(with: data!, options: []){
+                    if let data = json as? [String:AnyObject] {
+                        let trueData = data["data"] as? [[String:AnyObject]]
+                        //print(trueData)
+                        for item in trueData! {
+                            let title = item["title"] as? String
+                            let id = item["id"] as? Int
+                            let cover = item["cover"] as? String
+                            
+                            
+                            let album = Album(id: id!, title: title!, cover: cover!)
+                            
+                            self.albumsArray.append(album)
+                        }
+                        completionHanlder(self.albumsArray)
+                        
                         
                     }
                 }
@@ -171,16 +237,13 @@ class ApiManager {
     
     
     
-}
-
-
-
-
-
-struct Song {
-    var preview: String
-    var title: String
-    var artistName: String
-    var albumImage: String
-    var albumName: String
+    
+    
+    struct Song {
+        var preview: String
+        var title: String
+        var artistName: String
+        var albumImage: String
+        var albumName: String
+    }
 }

@@ -9,22 +9,22 @@ import Foundation
 
 struct Album {
     var id: Int
-    var name: String
+    var title: String
     var cover: String
 }
 
 
 extension Album {
     init?(json: [String: AnyObject]) {
-            guard let name = json["title"] as? String,
-                let cover = json["cover"] as? String,
+            guard let title = json["title"] as? String,
+                  let cover = json["cover"] as? String,
                   let id = json["id"] as? Int
             else {
                 return nil
             }
 
         
-            self.name = name
+            self.title = title
             self.cover = cover
             self.id = id
         

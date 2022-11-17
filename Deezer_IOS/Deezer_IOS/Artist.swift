@@ -20,14 +20,14 @@ extension Artist {
             guard
                 let id = json["id"] as? Int,
                 let name = json["title"] as? String,
-                let cover = json["picture"] as? String
+                let picture = json["picture"] as? String
             else {
                 return nil
             }
 
             
             self.name = name
-            self.picture = cover
+            self.picture = picture
             self.id = id
         
         

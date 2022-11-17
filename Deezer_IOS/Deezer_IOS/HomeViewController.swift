@@ -25,8 +25,8 @@ class HomeViewController: UIViewController, UITableViewDelegate, UITableViewData
         // Do any additional setup after loading the view.
         // allo
         
-        ApiManager.shared.getAlbum { data in
-            print(data)
+        ApiManager.shared.fetchAllAlbums { data in
+            
             self.albums = data
             DispatchQueue.main.async {
                 self.ArtisteTableView.reloadData()
@@ -47,7 +47,7 @@ class HomeViewController: UIViewController, UITableViewDelegate, UITableViewData
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        print(self.albums[indexPath.row].name)
+        print(self.albums[indexPath.row].title)
     }
 
     func numberOfSections(in tableView: UITableView) -> Int {
@@ -57,7 +57,7 @@ class HomeViewController: UIViewController, UITableViewDelegate, UITableViewData
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let ArtisteCell = ArtisteTableView.dequeueReusableCell(withIdentifier: "ArtisteCell", for: indexPath)
         
-        ArtisteCell.textLabel?.text = self.albums[indexPath.row].name
+        ArtisteCell.textLabel?.text = self.albums[indexPath.row].title
         
         return ArtisteCell
     }
