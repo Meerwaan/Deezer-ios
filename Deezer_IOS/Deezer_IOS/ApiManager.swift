@@ -17,14 +17,7 @@ class ApiManager {
     
     
     
-    func getImageFromUrl(urlStr: String) -> UIImage {
-        let url = URL(string: urlStr)
-        var image = UIImage(named: "test")
-        if let data = try? Data(contentsOf: url!) {
-            image = UIImage(data: data)
-        }
-        return image!
-    }
+   
     
     func fetchTracksFromArtists(searchText: String ,completion: @escaping (_ data : [Song], _ error: Error?) -> Void){
         var tracksArray = [Song]()
@@ -206,7 +199,7 @@ class ApiManager {
         let strUrl = "\(baseURL)chart/0/albums"
         let url = URL(string: strUrl)!
         let config = URLSessionConfiguration.default
-        let session = URLSession(configuration: config)
+        
         
         let task = URLSession.shared.dataTask(with: url) { (data, response, error) in
             if error != nil {
