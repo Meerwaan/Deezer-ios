@@ -405,10 +405,10 @@
             </objects>
             <point key="canvasLocation" x="6487.7862595419847" y="740.84507042253529"/>
         </scene>
-        <!--View Controller-->
+        <!--Lunch Song View Controller-->
         <scene sceneID="SlX-pC-QbB">
             <objects>
-                <viewController id="n5i-C3-tYi" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="LunchSong" id="n5i-C3-tYi" customClass="LunchSongViewController" customModule="Deezer_IOS" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="N0u-H9-yTL">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>

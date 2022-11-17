@@ -34,7 +34,9 @@ class DetailsAlbumViewController: UIViewController, UITableViewDelegate, UITable
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        print(self.DetailsAlbum[indexPath.row].title)
+        let LunchSong = storyboard?.instantiateViewController(identifier: "LunchSong") as! LunchSongViewController
+        LunchSong.modalPresentationStyle = .fullScreen
+        present(LunchSong,animated: true)
     }
 
     func numberOfSections(in tableView: UITableView) -> Int {

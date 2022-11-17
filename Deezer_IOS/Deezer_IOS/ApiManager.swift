@@ -168,7 +168,7 @@ class ApiManager {
         task.resume()
     }
     
-    func fetchAllArtists(completion: @escaping (_ data: [Artist]) -> Void){
+    func fetchAllArtists(completionHandler: @escaping (_ data: [Artist]) -> Void){
         let strUrl = "\(baseURL)chart/0/artists"
         let url = URL(string: strUrl)!
         let config = URLSessionConfiguration.default
@@ -193,6 +193,7 @@ class ApiManager {
                             print(artiste)
                             self.artistsArray.append(artiste)
                         }
+                        completionHandler(self.artistsArray)
                         
                     }
                 }
