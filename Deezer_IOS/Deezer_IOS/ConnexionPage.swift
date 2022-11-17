@@ -21,14 +21,16 @@ class ConnexionPage: UIViewController {
     @IBAction func Connexion(_ sender: Any) {
         
         if (self.EMail.text == "admin" && self.Password.text == "admin"){
-            let HomePageView = storyboard?.instantiateViewController(identifier: "HomePage") as! HomeViewController
-            HomePageView.modalPresentationStyle = .fullScreen
-            present(HomePageView,animated: true)
+            let storyboard = UIStoryboard(name: "Main", bundle: nil)
+                    let mainTabBarController = storyboard.instantiateViewController(identifier: "MainTabBarController")
+                    mainTabBarController.modalPresentationStyle = .fullScreen
+                    
+                    self.present(mainTabBarController, animated: true, completion: nil)
+                }
         }
     }
     
     
-    }
     
    
 
