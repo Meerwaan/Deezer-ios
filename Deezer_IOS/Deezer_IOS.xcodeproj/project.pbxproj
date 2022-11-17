@@ -17,7 +17,6 @@
 		8F349197292460EF00F4C779 /* ListArtistsPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F349196292460EF00F4C779 /* ListArtistsPage.swift */; };
 		8F74DCED292527FB002C4113 /* Artist.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F74DCEC292527FB002C4113 /* Artist.swift */; };
 		D91EF4DD2924FAB900450FD6 /* Album.swift in Sources */ = {isa = PBXBuildFile; fileRef = D91EF4DC2924FAB900450FD6 /* Album.swift */; };
-		D91EF4E1292535C400450FD6 /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D91EF4E0292535C400450FD6 /* SearchViewController.swift */; };
 		D94660192923BF7D00FB6309 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D94660182923BF7D00FB6309 /* AppDelegate.swift */; };
 		D946601B2923BF7D00FB6309 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D946601A2923BF7D00FB6309 /* SceneDelegate.swift */; };
 		D946601D2923BF7D00FB6309 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D946601C2923BF7D00FB6309 /* ViewController.swift */; };
@@ -39,7 +38,6 @@
 		8F349196292460EF00F4C779 /* ListArtistsPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListArtistsPage.swift; sourceTree = "<group>"; };
 		8F74DCEC292527FB002C4113 /* Artist.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Artist.swift; sourceTree = "<group>"; };
 		D91EF4DC2924FAB900450FD6 /* Album.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Album.swift; sourceTree = "<group>"; };
-		D91EF4E0292535C400450FD6 /* SearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
 		D94660152923BF7D00FB6309 /* Deezer_IOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Deezer_IOS.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D94660182923BF7D00FB6309 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D946601A2923BF7D00FB6309 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -97,7 +95,6 @@
 				8F349196292460EF00F4C779 /* ListArtistsPage.swift */,
 				D91EF4DC2924FAB900450FD6 /* Album.swift */,
 				8F74DCEC292527FB002C4113 /* Artist.swift */,
-				D91EF4E0292535C400450FD6 /* SearchViewController.swift */,
 				848736FB29253CAB00592FAF /* Track.swift */,
 				8472ED85292646C400B4B2E0 /* DetailsAlbumViewController.swift */,
 				8472ED8729264BF700B4B2E0 /* Song.swift */,
@@ -184,7 +181,6 @@
 				849C19F12923D78A0042B962 /* InscriptionPage.swift in Sources */,
 				D94660192923BF7D00FB6309 /* AppDelegate.swift in Sources */,
 				8F74DCED292527FB002C4113 /* Artist.swift in Sources */,
-				D91EF4E1292535C400450FD6 /* SearchViewController.swift in Sources */,
 				8472ED8A292656A700B4B2E0 /* LunchSongViewController.swift in Sources */,
 				849C19EF2923D7650042B962 /* LuncherPage.swift in Sources */,
 				8472ED8829264BF700B4B2E0 /* Song.swift in Sources */,

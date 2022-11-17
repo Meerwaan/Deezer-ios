@@ -3,7 +3,6 @@
     <device id="retina6_12" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
-        <capability name="Image references" minToolsVersion="12.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -503,79 +502,6 @@
             </objects>
             <point key="canvasLocation" x="6488" y="89"/>
         </scene>
-        <!--Search View Controller-->
-        <scene sceneID="WEI-eW-XbP">
-            <objects>
-                <viewController id="BpL-Gm-gja" customClass="SearchViewController" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="Q9V-t2-LDg" customClass="SearchViewController">
-                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lcz-Ki-0Xs">
-                                <rect key="frame" x="26" y="80" width="50" height="35"/>
-                                <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain">
-                                    <imageReference key="image" image="arrow.backward" catalog="system" symbolScale="large"/>
-                                    <preferredSymbolConfiguration key="preferredSymbolConfigurationForImage" configurationType="pointSize" pointSize="17" scale="default" weight="bold"/>
-                                    <color key="baseForegroundColor" systemColor="secondarySystemBackgroundColor"/>
-                                </buttonConfiguration>
-                            </button>
-                            <searchBar contentMode="redraw" translatesAutoresizingMaskIntoConstraints="NO" id="cb5-hN-TIP">
-                                <rect key="frame" x="74" y="75" width="289" height="56"/>
-                                <textInputTraits key="textInputTraits"/>
-                            </searchBar>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="6mZ-LT-rwX">
-                                <rect key="frame" x="27" y="150" width="336" height="619"/>
-                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                                <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="SearchCell" textLabel="dna-bg-X8a" rowHeight="103" style="IBUITableViewCellStyleDefault" id="PC8-hX-eDq">
-                                        <rect key="frame" x="0.0" y="50" width="336" height="103"/>
-                                        <autoresizingMask key="autoresizingMask"/>
-                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="PC8-hX-eDq" id="DcO-lW-waH">
-                                            <rect key="frame" x="0.0" y="0.0" width="336" height="103"/>
-                                            <autoresizingMask key="autoresizingMask"/>
-                                            <subviews>
-                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="dna-bg-X8a">
-                                                    <rect key="frame" x="20" y="0.0" width="296" height="103"/>
-                                                    <autoresizingMask key="autoresizingMask"/>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="0.0"/>
-                                                    <nil key="textColor"/>
-                                                    <nil key="highlightedColor"/>
-                                                </label>
-                                            </subviews>
-                                        </tableViewCellContentView>
-                                    </tableViewCell>
-                                </prototypes>
-                            </tableView>
-                        </subviews>
-                        <viewLayoutGuide key="safeArea" id="Pby-ko-IEX"/>
-                        <color key="backgroundColor" red="0.15219128543733168" green="0.15289386678418435" blue="0.15500161082474229" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                        <constraints>
-                            <constraint firstItem="cb5-hN-TIP" firstAttribute="leading" secondItem="Pby-ko-IEX" secondAttribute="leading" constant="74" id="C56-1F-KWx"/>
-                            <constraint firstItem="Pby-ko-IEX" firstAttribute="trailing" secondItem="cb5-hN-TIP" secondAttribute="trailing" constant="30" id="UFB-eQ-koZ"/>
-                            <constraint firstItem="cb5-hN-TIP" firstAttribute="top" secondItem="Pby-ko-IEX" secondAttribute="top" constant="16" id="a6Y-3x-egZ"/>
-                            <constraint firstItem="6mZ-LT-rwX" firstAttribute="top" secondItem="cb5-hN-TIP" secondAttribute="bottom" constant="19" id="aeE-5Z-G7V"/>
-                            <constraint firstItem="6mZ-LT-rwX" firstAttribute="leading" secondItem="Pby-ko-IEX" secondAttribute="leading" constant="27" id="bFP-Jn-4kU"/>
-                            <constraint firstItem="Pby-ko-IEX" firstAttribute="trailing" secondItem="6mZ-LT-rwX" secondAttribute="trailing" constant="30" id="cNx-Rh-GYa"/>
-                            <constraint firstItem="lcz-Ki-0Xs" firstAttribute="top" secondItem="Pby-ko-IEX" secondAttribute="top" constant="21" id="ch3-T5-7XQ"/>
-                            <constraint firstItem="6mZ-LT-rwX" firstAttribute="bottom" secondItem="Pby-ko-IEX" secondAttribute="bottom" id="gK2-bb-at2"/>
-                            <constraint firstItem="6mZ-LT-rwX" firstAttribute="leading" secondItem="Pby-ko-IEX" secondAttribute="leading" constant="27" id="goB-BM-bSJ"/>
-                            <constraint firstItem="lcz-Ki-0Xs" firstAttribute="leading" secondItem="Pby-ko-IEX" secondAttribute="leading" constant="26" id="lRP-eR-XYe"/>
-                            <constraint firstItem="Pby-ko-IEX" firstAttribute="trailing" secondItem="6mZ-LT-rwX" secondAttribute="trailing" constant="30" id="nzR-EP-qxW"/>
-                            <constraint firstItem="Pby-ko-IEX" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="lcz-Ki-0Xs" secondAttribute="trailing" symbolic="YES" id="ss3-u4-3j8"/>
-                        </constraints>
-                        <connections>
-                            <outlet property="Search" destination="cb5-hN-TIP" id="9FH-cj-r9X"/>
-                            <outlet property="SearchTableView" destination="6mZ-LT-rwX" id="yPX-6r-mQB"/>
-                            <outlet property="searchbar" destination="cb5-hN-TIP" id="koU-xl-T4b"/>
-                        </connections>
-                    </view>
-                    <tabBarItem key="tabBarItem" systemItem="search" id="PzK-NS-Gu4"/>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="Jzl-3g-pck" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="5580.9160305343512" y="-421.12676056338029"/>
-        </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="0N8-rB-bWS">
             <objects>
@@ -588,7 +514,6 @@
                     </tabBar>
                     <connections>
                         <segue destination="9dE-M7-tHR" kind="relationship" relationship="viewControllers" id="sQk-Gc-kP1"/>
-                        <segue destination="BpL-Gm-gja" kind="relationship" relationship="viewControllers" id="Yu9-PG-DfW"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="WVh-lO-rjD" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -604,9 +529,6 @@
         <image name="pnl" width="664" height="664"/>
         <systemColor name="opaqueSeparatorColor">
             <color red="0.77647058823529413" green="0.77647058823529413" blue="0.78431372549019607" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-        </systemColor>
-        <systemColor name="secondarySystemBackgroundColor">
-            <color red="0.94901960784313721" green="0.94901960784313721" blue="0.96862745098039216" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
