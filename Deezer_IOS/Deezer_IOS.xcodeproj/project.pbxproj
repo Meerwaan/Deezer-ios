@@ -69,6 +69,49 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		84B14B4F2927BA800070B7AC /* View */ = {
+			isa = PBXGroup;
+			children = (
+				848320B02926B14500DBB876 /* SearchTableViewCell.xib */,
+				D94660232923BF7E00FB6309 /* LaunchScreen.storyboard */,
+				D946601E2923BF7D00FB6309 /* Main.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		84B14B512927BAA20070B7AC /* controller */ = {
+			isa = PBXGroup;
+			children = (
+				84B14B522927BAE80070B7AC /* ClassItem */,
+				849C19EE2923D7650042B962 /* LuncherPage.swift */,
+				8F349196292460EF00F4C779 /* ListArtistsPage.swift */,
+				849C19F02923D78A0042B962 /* InscriptionPage.swift */,
+				849C19F22923D79C0042B962 /* ConnexionPage.swift */,
+				D9C29EB029241CD700B4FA04 /* ApiManager.swift */,
+				8472ED85292646C400B4B2E0 /* DetailsAlbumViewController.swift */,
+				848320AB2926A46900DBB876 /* SearchViewController.swift */,
+				8472ED89292656A700B4B2E0 /* LunchSongViewController.swift */,
+				D94D2FAB2923E38900A8FEF4 /* HomeViewController.swift */,
+				D946601A2923BF7D00FB6309 /* SceneDelegate.swift */,
+				84B9D0352926D30C0086C95E /* DetailsArtistViewController.swift */,
+				848320AF2926B14500DBB876 /* SearchTableViewCell.swift */,
+				D946601C2923BF7D00FB6309 /* ViewController.swift */,
+				D94660182923BF7D00FB6309 /* AppDelegate.swift */,
+			);
+			path = controller;
+			sourceTree = "<group>";
+		};
+		84B14B522927BAE80070B7AC /* ClassItem */ = {
+			isa = PBXGroup;
+			children = (
+				848736FB29253CAB00592FAF /* Track.swift */,
+				8F74DCEC292527FB002C4113 /* Artist.swift */,
+				8472ED8729264BF700B4B2E0 /* Song.swift */,
+				D91EF4DC2924FAB900450FD6 /* Album.swift */,
+			);
+			path = ClassItem;
+			sourceTree = "<group>";
+		};
 		D946600C2923BF7D00FB6309 = {
 			isa = PBXGroup;
 			children = (
@@ -88,29 +131,10 @@
 		D94660172923BF7D00FB6309 /* Deezer_IOS */ = {
 			isa = PBXGroup;
 			children = (
-				D94660182923BF7D00FB6309 /* AppDelegate.swift */,
-				D946601A2923BF7D00FB6309 /* SceneDelegate.swift */,
-				D946601C2923BF7D00FB6309 /* ViewController.swift */,
-				849C19F22923D79C0042B962 /* ConnexionPage.swift */,
-				849C19F02923D78A0042B962 /* InscriptionPage.swift */,
-				D94D2FAB2923E38900A8FEF4 /* HomeViewController.swift */,
-				849C19EE2923D7650042B962 /* LuncherPage.swift */,
-				D946601E2923BF7D00FB6309 /* Main.storyboard */,
+				84B14B512927BAA20070B7AC /* controller */,
+				84B14B4F2927BA800070B7AC /* View */,
 				D94660212923BF7E00FB6309 /* Assets.xcassets */,
-				D94660232923BF7E00FB6309 /* LaunchScreen.storyboard */,
 				D94660262923BF7E00FB6309 /* Info.plist */,
-				D9C29EB029241CD700B4FA04 /* ApiManager.swift */,
-				8F349196292460EF00F4C779 /* ListArtistsPage.swift */,
-				D91EF4DC2924FAB900450FD6 /* Album.swift */,
-				8F74DCEC292527FB002C4113 /* Artist.swift */,
-				848736FB29253CAB00592FAF /* Track.swift */,
-				8472ED85292646C400B4B2E0 /* DetailsAlbumViewController.swift */,
-				8472ED8729264BF700B4B2E0 /* Song.swift */,
-				8472ED89292656A700B4B2E0 /* LunchSongViewController.swift */,
-				848320AB2926A46900DBB876 /* SearchViewController.swift */,
-				848320AF2926B14500DBB876 /* SearchTableViewCell.swift */,
-				848320B02926B14500DBB876 /* SearchTableViewCell.xib */,
-				84B9D0352926D30C0086C95E /* DetailsArtistViewController.swift */,
 			);
 			path = Deezer_IOS;
 			sourceTree = "<group>";
