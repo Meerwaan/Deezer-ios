@@ -21,7 +21,6 @@ class DetailsArtistViewController: UIViewController,UITableViewDelegate, UITable
 
         ArtistTableView.dataSource = self
         ArtistTableView.delegate = self
-        
        
         ApiManager.shared.fetchAlbumsFromArtistId(id: id, completionHandler: {data,error in
             self.albums = data
@@ -33,13 +32,7 @@ class DetailsArtistViewController: UIViewController,UITableViewDelegate, UITable
     }
     
 
-    @IBAction func TapToBack(_ sender: Any) {
-        let storyboard = UIStoryboard(name: "Main", bundle: nil)
-                let mainTabBarController = storyboard.instantiateViewController(identifier: "MainTabBarController")
-                mainTabBarController.modalPresentationStyle = .fullScreen
-                
-                self.present(mainTabBarController, animated: true, completion: nil)
-    }
+
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         self.albums.count
     }
@@ -48,7 +41,7 @@ class DetailsArtistViewController: UIViewController,UITableViewDelegate, UITable
         let DetailsAlbum = storyboard?.instantiateViewController(identifier: "DetailsAlbum") as! DetailsAlbumViewController
         DetailsAlbum.modalPresentationStyle = .fullScreen
         DetailsAlbum.id = self.albums[indexPath.row].id
-        present(DetailsAlbum,animated: true)
+        navigationController?.pushViewController(DetailsAlbum,animated: true)
     }
 
     func numberOfSections(in tableView: UITableView) -> Int {

@@ -50,7 +50,7 @@ class HomeViewController: UIViewController, UITableViewDelegate, UITableViewData
         let DetailsAlbum = storyboard?.instantiateViewController(identifier: "DetailsAlbum") as! DetailsAlbumViewController
         DetailsAlbum.modalPresentationStyle = .fullScreen
         DetailsAlbum.id = self.albums[indexPath.row].id
-        present(DetailsAlbum,animated: true)
+        navigationController?.pushViewController(DetailsAlbum,animated: true)
     }
 
     func numberOfSections(in tableView: UITableView) -> Int {

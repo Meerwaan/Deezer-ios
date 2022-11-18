@@ -52,13 +52,6 @@ class LunchSongViewController: UIViewController {
     }
     
     
-    @IBAction func TapToBack(_ sender: Any) {
-        let storyboard = UIStoryboard(name: "Main", bundle: nil)
-        let mainTabBarController = storyboard.instantiateViewController(identifier: "MainTabBarController")
-        mainTabBarController.modalPresentationStyle = .fullScreen
-        
-        self.present(mainTabBarController, animated: true, completion: nil)
-    }
     
     @IBAction func playTrack(_ sender: UIButton) {
         

@@ -9,21 +9,26 @@ import UIKit
 
 class SearchViewController: UIViewController, UITableViewDelegate,UITableViewDataSource,  UISearchBarDelegate {
     
+    @IBOutlet weak var SearchBar: UISearchBar!
     @IBOutlet weak var tableView: UITableView!
     var artist:[Artist] = []
+    
+   
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        
+        
+        
         
         var nib = UINib(nibName: "SearchTableViewCell", bundle: nil)
         tableView.register(nib, forCellReuseIdentifier: "SearchTableViewCell")
         tableView.delegate = self
         tableView.dataSource = self
         
-        
     }
     func searchBar(_ searchBar: UISearchBar, textDidChange searchText: String) {
-        
         if searchText != "" {
             ApiManager.shared.fetchArtists(searchText: searchText, completionHandler: {data,error in
                 self.artist = data
@@ -33,7 +38,6 @@ class SearchViewController: UIViewController, UITableViewDelegate,UITableViewDat
             })
         }
     }
-    
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         self.artist.count
     }
@@ -44,7 +48,7 @@ class SearchViewController: UIViewController, UITableViewDelegate,UITableViewDat
         artist.id = self.artist[indexPath.row].id
         artist.name = self.artist[indexPath.row].name
         artist.image = self.artist[indexPath.row].picture
-        present(artist,animated: true)
+        navigationController?.pushViewController(artist,animated: true)
     }
 
     func numberOfSections(in tableView: UITableView) -> Int {
