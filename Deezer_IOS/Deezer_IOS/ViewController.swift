@@ -11,9 +11,16 @@ class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-     
+        DispatchQueue.main.asyncAfter(deadline: .now() + 5.0) {
+            self.yourFuncHere()
+        }
+
+
+
+    }
+    func yourFuncHere() {
+        let LunchPage = storyboard?.instantiateViewController(identifier: "LuncherPage") as!LuncherPage;        LunchPage.modalPresentationStyle = .fullScreen
+        present(LunchPage,animated: true)
     }
 
-
 }
-
