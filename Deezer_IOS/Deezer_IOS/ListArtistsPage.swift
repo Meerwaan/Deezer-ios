@@ -18,6 +18,7 @@ class ListArtistsPage: UIViewController, UITableViewDelegate, UITableViewDataSou
         ListArtistPageView.dataSource = self
         
         ApiManager.shared.fetchAllArtists { data in
+            self.artists.removeAll()
             print(data)
             self.artists=data
             DispatchQueue.main.async {
