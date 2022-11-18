@@ -33,7 +33,7 @@
         <!--Luncher Page-->
         <scene sceneID="6oH-eZ-qO8">
             <objects>
-                <viewController id="Ynn-xc-Jjb" customClass="LuncherPage" customModule="Deezer_IOS" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="LuncherPage" id="Ynn-xc-Jjb" customClass="LuncherPage" customModule="Deezer_IOS" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="7IB-Qw-fsR">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -63,8 +63,8 @@
                                     <action selector="TapToSignIn:" destination="Ynn-xc-Jjb" eventType="touchUpInside" id="mTr-BL-i30"/>
                                 </connections>
                             </button>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Deezer-logo" translatesAutoresizingMaskIntoConstraints="NO" id="e8v-KM-FVK">
-                                <rect key="frame" x="76" y="-207" width="240" height="720"/>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="Deezer-logo" translatesAutoresizingMaskIntoConstraints="NO" id="e8v-KM-FVK">
+                                <rect key="frame" x="76" y="0.0" width="240" height="513"/>
                             </imageView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="La8-K6-evo"/>
@@ -130,27 +130,23 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Zax-0j-SYn">
-                                <rect key="frame" x="159" y="638" width="75" height="35"/>
+                                <rect key="frame" x="100" y="638" width="193" height="35"/>
                                 <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="filled" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="Confirmer l'inscription">
+                                    <color key="baseBackgroundColor" red="0.18209359080000001" green="0.18209359080000001" blue="0.18209359080000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                </buttonConfiguration>
                             </button>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Deezer-logo" translatesAutoresizingMaskIntoConstraints="NO" id="b1h-5h-BQA">
                                 <rect key="frame" x="76" y="79" width="240" height="128"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9Wd-1M-uf4">
-                                <rect key="frame" x="100" y="609" width="42" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="FdY-dT-62B"/>
                         <color key="backgroundColor" red="0.13333332540000001" green="0.13333332540000001" blue="0.13333332540000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                         <constraints>
                             <constraint firstItem="FdY-dT-62B" firstAttribute="trailing" secondItem="2Qi-oj-fLS" secondAttribute="trailing" constant="100" id="24H-88-RRf"/>
                             <constraint firstItem="5Yo-ml-z0x" firstAttribute="top" secondItem="FdY-dT-62B" secondAttribute="top" constant="192" id="3yy-Jk-gVW"/>
+                            <constraint firstItem="FdY-dT-62B" firstAttribute="trailing" secondItem="Zax-0j-SYn" secondAttribute="trailing" constant="100" id="4cf-v9-wh2"/>
                             <constraint firstItem="5Yo-ml-z0x" firstAttribute="leading" secondItem="FdY-dT-62B" secondAttribute="leading" constant="147" id="5Cc-Yr-Xyb"/>
                             <constraint firstItem="FdY-dT-62B" firstAttribute="trailing" secondItem="uPM-pd-BDy" secondAttribute="trailing" constant="100" id="S00-gj-JKD"/>
                             <constraint firstItem="CNX-2y-MEJ" firstAttribute="top" secondItem="DhE-0U-NHn" secondAttribute="bottom" constant="35" id="SEt-20-Dcq"/>
@@ -166,6 +162,7 @@
                             <constraint firstItem="DhE-0U-NHn" firstAttribute="top" secondItem="5Yo-ml-z0x" secondAttribute="bottom" constant="19" id="rPG-Y5-WuH"/>
                             <constraint firstItem="2Qi-oj-fLS" firstAttribute="leading" secondItem="FdY-dT-62B" secondAttribute="leading" constant="100" id="rb3-kh-frz"/>
                             <constraint firstItem="2Qi-oj-fLS" firstAttribute="top" secondItem="BeR-lK-9zR" secondAttribute="bottom" constant="30" id="v2r-yV-5b6"/>
+                            <constraint firstItem="Zax-0j-SYn" firstAttribute="leading" secondItem="FdY-dT-62B" secondAttribute="leading" constant="100" id="vOT-UE-UAw"/>
                             <constraint firstItem="DhE-0U-NHn" firstAttribute="leading" secondItem="FdY-dT-62B" secondAttribute="leading" constant="100" id="vPc-fM-omj"/>
                             <constraint firstItem="FdY-dT-62B" firstAttribute="trailing" secondItem="5Yo-ml-z0x" secondAttribute="trailing" constant="148" id="vVe-sC-QaZ"/>
                             <constraint firstItem="BeR-lK-9zR" firstAttribute="leading" secondItem="FdY-dT-62B" secondAttribute="leading" constant="93" id="vcM-JN-qpp"/>
@@ -197,14 +194,6 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XG2-yK-g7V">
-                                <rect key="frame" x="159" y="596.33333333333337" width="75" height="35"/>
-                                <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="filled" title="Button"/>
-                                <connections>
-                                    <action selector="Connexion:" destination="qWJ-o4-QHh" eventType="touchUpInside" id="tTa-JQ-atH"/>
-                                </connections>
-                            </button>
                             <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="7Zg-uC-dLN">
                                 <rect key="frame" x="100" y="428.33333333333331" width="193" height="34"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
@@ -216,6 +205,16 @@
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XG2-yK-g7V">
+                                <rect key="frame" x="142" y="596.33333333333337" width="109" height="35"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="Connexion">
+                                    <color key="baseBackgroundColor" red="0.18209359080000001" green="0.18209359080000001" blue="0.18209359080000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="Connexion:" destination="qWJ-o4-QHh" eventType="touchUpInside" id="tTa-JQ-atH"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="BAT-SY-9lK"/>
                         <color key="backgroundColor" red="0.13333332540000001" green="0.13333332540000001" blue="0.13333332540000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
@@ -226,14 +225,14 @@
                             <constraint firstItem="BAT-SY-9lK" firstAttribute="trailing" secondItem="BbW-pv-vOH" secondAttribute="trailing" constant="100" id="GAS-Kp-n1F"/>
                             <constraint firstItem="BbW-pv-vOH" firstAttribute="leading" secondItem="BAT-SY-9lK" secondAttribute="leading" constant="100" id="Gh3-o0-ZIt"/>
                             <constraint firstItem="7Zg-uC-dLN" firstAttribute="leading" secondItem="BAT-SY-9lK" secondAttribute="leading" constant="100" id="Lss-bM-oSk"/>
+                            <constraint firstItem="XG2-yK-g7V" firstAttribute="leading" secondItem="BAT-SY-9lK" secondAttribute="leading" constant="142" id="NPG-f7-VfE"/>
                             <constraint firstItem="j8l-g3-edU" firstAttribute="leading" secondItem="BAT-SY-9lK" secondAttribute="leading" constant="100" id="Qyu-uP-9pF"/>
                             <constraint firstItem="BAT-SY-9lK" firstAttribute="trailing" secondItem="NvF-np-ENQ" secondAttribute="trailing" constant="140" id="Rfq-hs-X55"/>
                             <constraint firstItem="j8l-g3-edU" firstAttribute="top" secondItem="BbW-pv-vOH" secondAttribute="bottom" constant="50" id="ZuO-dw-CsB"/>
                             <constraint firstItem="XG2-yK-g7V" firstAttribute="top" secondItem="7Zg-uC-dLN" secondAttribute="bottom" constant="134" id="bvh-8v-oN5"/>
                             <constraint firstItem="BAT-SY-9lK" firstAttribute="trailing" secondItem="j8l-g3-edU" secondAttribute="trailing" constant="100" id="fhf-72-O37"/>
                             <constraint firstItem="NvF-np-ENQ" firstAttribute="top" secondItem="BAT-SY-9lK" secondAttribute="top" constant="198" id="k3A-9K-pXu"/>
-                            <constraint firstItem="BAT-SY-9lK" firstAttribute="trailing" secondItem="XG2-yK-g7V" secondAttribute="trailing" constant="159" id="nKG-v5-qnm"/>
-                            <constraint firstItem="XG2-yK-g7V" firstAttribute="leading" secondItem="BAT-SY-9lK" secondAttribute="leading" constant="159" id="qgI-cb-XDk"/>
+                            <constraint firstItem="BAT-SY-9lK" firstAttribute="trailing" secondItem="XG2-yK-g7V" secondAttribute="trailing" constant="142" id="m9T-pa-FKR"/>
                             <constraint firstItem="BAT-SY-9lK" firstAttribute="trailing" secondItem="7Zg-uC-dLN" secondAttribute="trailing" constant="100" id="vgu-SE-jVg"/>
                         </constraints>
                     </view>
@@ -309,6 +308,7 @@
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="8do-yg-OMW"/>
                         <color key="backgroundColor" red="0.13333332540000001" green="0.13333332540000001" blue="0.13333332540000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="uzq-Lb-l3U" firstAttribute="top" secondItem="8do-yg-OMW" secondAttribute="top" id="4cH-fs-TXe"/>
                             <constraint firstItem="T03-lx-gOX" firstAttribute="top" secondItem="8do-yg-OMW" secondAttribute="top" constant="83" id="5G2-Fv-CTa"/>
@@ -327,7 +327,9 @@
                             <constraint firstItem="T03-lx-gOX" firstAttribute="leading" secondItem="8do-yg-OMW" secondAttribute="leading" constant="303" id="zob-fX-Yyh"/>
                         </constraints>
                     </view>
-                    <tabBarItem key="tabBarItem" systemItem="featured" id="J44-ol-PD9"/>
+                    <tabBarItem key="tabBarItem" systemItem="featured" id="J44-ol-PD9">
+                        <color key="badgeColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </tabBarItem>
                     <connections>
                         <outlet property="ArtisteTableView" destination="6sx-rZ-5cR" id="DsY-5Y-P6M"/>
                     </connections>
@@ -530,7 +532,7 @@
                                 <color key="sectionIndexTrackingBackgroundColor" red="0.136980509" green="0.136980509" blue="0.136980509" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                             </tableView>
                             <searchBar contentMode="redraw" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="L11-iV-CLj">
-                                <rect key="frame" x="-7" y="80" width="398" height="44"/>
+                                <rect key="frame" x="-9" y="80" width="398" height="44"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
                                 <textInputTraits key="textInputTraits"/>
                                 <connections>
@@ -644,7 +646,9 @@
                     <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="2Vw-kf-eJw">
                         <rect key="frame" x="0.0" y="0.0" width="1000" height="1000"/>
                         <autoresizingMask key="autoresizingMask"/>
-                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="backgroundColor" red="0.14817872979999999" green="0.14817872979999999" blue="0.14817872979999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="selectedImageTintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </tabBar>
                     <connections>
                         <segue destination="9dE-M7-tHR" kind="relationship" relationship="viewControllers" id="sQk-Gc-kP1"/>

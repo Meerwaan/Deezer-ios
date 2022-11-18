@@ -23,12 +23,9 @@ class SearchViewController: UIViewController, UITableViewDelegate,UITableViewDat
         
     }
     func searchBar(_ searchBar: UISearchBar, textDidChange searchText: String) {
-        self.artist.removeAll()
-        self.artist=[]
-        self.tableView.reloadData()
+        
         if searchText != "" {
             ApiManager.shared.fetchArtists(searchText: searchText, completionHandler: {data,error in
-                self.artist.removeAll()
                 self.artist = data
                 DispatchQueue.main.async {
                     self.tableView.reloadData()
