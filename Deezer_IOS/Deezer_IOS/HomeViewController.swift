@@ -26,7 +26,7 @@ class HomeViewController: UIViewController, UITableViewDelegate, UITableViewData
         // allo
         
         ApiManager.shared.fetchAllAlbums { data in
-            
+            self.albums.removeAll()
             self.albums = data
             DispatchQueue.main.async {
                 self.ArtisteTableView.reloadData()

@@ -67,6 +67,7 @@ class ApiManager {
                 if let json = try? JSONSerialization.jsonObject(with: data!, options: []){
                     if let data = json as? [String:AnyObject] {
                         let trueData = data["data"] as? [[String:AnyObject]]
+                        self.artistsArray.removeAll()
                         //print(trueData)
                         for item in trueData! {
                             let name = item["name"] as? String
@@ -209,6 +210,7 @@ class ApiManager {
                     if let data = json as? [String:AnyObject] {
                         let trueData = data["data"] as? [[String:AnyObject]]
                         //print(trueData)
+                        self.albumsArray.removeAll()
                         for item in trueData! {
                             let title = item["title"] as? String
                             let id = item["id"] as? Int
