@@ -43,6 +43,14 @@ class DetailsAlbumViewController: UIViewController, UITableViewDelegate, UITable
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         let LunchSong = storyboard?.instantiateViewController(identifier: "LunchSong") as! LunchSongViewController
+        
+        LunchSong.preview = DetailsAlbum[indexPath.row].preview
+        LunchSong.albumImage = DetailsAlbum[indexPath.row].albumImage
+        LunchSong.Title = DetailsAlbum[indexPath.row].title
+        LunchSong.NameArtist =  DetailsAlbum[indexPath.row].artistName
+        
+        
+        
         LunchSong.modalPresentationStyle = .fullScreen
         present(LunchSong,animated: true)
     }

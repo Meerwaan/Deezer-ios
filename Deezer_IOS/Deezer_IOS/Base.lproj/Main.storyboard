@@ -432,25 +432,14 @@
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" image="pnl" translatesAutoresizingMaskIntoConstraints="NO" id="q3z-vm-he7">
-                                <rect key="frame" x="55" y="187" width="283" height="300"/>
-                            </imageView>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" fixedFrame="YES" image="play.fill" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="4P1-Qa-3RC">
-                                <rect key="frame" x="177" y="573" width="38" height="44"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
-                            <slider opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="3a0-kw-KPz">
-                                <rect key="frame" x="137" y="701" width="118" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="3a0-kw-KPz">
+                                <rect key="frame" x="137" y="701" width="118" height="31"/>
+                                <connections>
+                                    <action selector="ChangeVo:" destination="n5i-C3-tYi" eventType="valueChanged" id="2Mx-ug-neF"/>
+                                    <action selector="ChangeVol:" destination="n5i-C3-tYi" eventType="valueChanged" id="i4u-4o-4tq"/>
+                                    <action selector="PlaySong:" destination="n5i-C3-tYi" eventType="valueChanged" id="beu-G0-ibA"/>
+                                </connections>
                             </slider>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" fixedFrame="YES" image="arrow.backward" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="sIf-4q-x0E">
-                                <rect key="frame" x="92" y="572" width="57" height="47"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" fixedFrame="YES" image="arrow.right" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="uNy-5p-mwB">
-                                <rect key="frame" x="243" y="567" width="62" height="59"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7OT-FC-b0Q">
                                 <rect key="frame" x="38" y="59" width="51" height="35"/>
                                 <state key="normal" title="Button"/>
@@ -462,22 +451,66 @@
                                     <action selector="TapToBack:" destination="n5i-C3-tYi" eventType="touchUpInside" id="ulV-Jb-xYq"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="249" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TiP-Ov-rqr">
+                                <rect key="frame" x="181" y="636" width="30" height="30"/>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                <connections>
+                                    <action selector="playTrack:" destination="n5i-C3-tYi" eventType="touchUpInside" id="ZG8-Zg-oPZ"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7ws-Cs-jNw">
+                                <rect key="frame" x="100" y="561.66666666666663" width="193" height="20.333333333333371"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" id="q3z-vm-he7">
+                                <rect key="frame" x="5" y="137" width="383" height="355.66666666666663"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="C2t-NG-lvU">
+                                <rect key="frame" x="100" y="517.66666666666663" width="193" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="mWW-5s-ld8"/>
                         <color key="backgroundColor" red="0.13333332540000001" green="0.13333332540000001" blue="0.13333332540000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                         <constraints>
+                            <constraint firstItem="7ws-Cs-jNw" firstAttribute="top" secondItem="C2t-NG-lvU" secondAttribute="bottom" constant="23" id="3e7-up-fnE"/>
                             <constraint firstItem="mWW-5s-ld8" firstAttribute="trailing" secondItem="7OT-FC-b0Q" secondAttribute="trailing" constant="304" id="4c9-v6-aM5"/>
+                            <constraint firstItem="3a0-kw-KPz" firstAttribute="leading" secondItem="mWW-5s-ld8" secondAttribute="leading" constant="139" id="5gO-eA-UQT"/>
+                            <constraint firstItem="q3z-vm-he7" firstAttribute="top" secondItem="mWW-5s-ld8" secondAttribute="top" constant="78" id="A7d-SB-6r7"/>
                             <constraint firstItem="mWW-5s-ld8" firstAttribute="bottom" secondItem="7OT-FC-b0Q" secondAttribute="bottom" constant="724" id="Gno-ej-e6s"/>
-                            <constraint firstItem="mWW-5s-ld8" firstAttribute="trailing" secondItem="q3z-vm-he7" secondAttribute="trailing" constant="55" id="UUf-vX-G7L"/>
+                            <constraint firstItem="TiP-Ov-rqr" firstAttribute="top" secondItem="7ws-Cs-jNw" secondAttribute="bottom" constant="54.000000000000114" id="Pu0-Ub-Gs5"/>
+                            <constraint firstItem="3a0-kw-KPz" firstAttribute="top" secondItem="TiP-Ov-rqr" secondAttribute="bottom" constant="35" id="QtT-8M-Ivw"/>
+                            <constraint firstItem="C2t-NG-lvU" firstAttribute="leading" secondItem="mWW-5s-ld8" secondAttribute="leading" constant="100" id="RzD-pT-xp8"/>
+                            <constraint firstItem="TiP-Ov-rqr" firstAttribute="leading" secondItem="mWW-5s-ld8" secondAttribute="leading" constant="181" id="SZw-yp-eyi"/>
                             <constraint firstItem="7OT-FC-b0Q" firstAttribute="top" secondItem="mWW-5s-ld8" secondAttribute="top" id="b1L-HV-fZQ"/>
-                            <constraint firstItem="q3z-vm-he7" firstAttribute="leading" secondItem="mWW-5s-ld8" secondAttribute="leading" constant="55" id="j5J-zC-zjO"/>
+                            <constraint firstItem="C2t-NG-lvU" firstAttribute="top" secondItem="q3z-vm-he7" secondAttribute="bottom" constant="25" id="cQc-5G-TDD"/>
+                            <constraint firstItem="q3z-vm-he7" firstAttribute="leading" secondItem="mWW-5s-ld8" secondAttribute="leading" constant="5" id="f2r-y8-CbF"/>
+                            <constraint firstItem="7ws-Cs-jNw" firstAttribute="leading" secondItem="mWW-5s-ld8" secondAttribute="leading" constant="100" id="inm-pr-j8v"/>
+                            <constraint firstItem="mWW-5s-ld8" firstAttribute="trailing" secondItem="7ws-Cs-jNw" secondAttribute="trailing" constant="100" id="isM-3O-c07"/>
+                            <constraint firstItem="mWW-5s-ld8" firstAttribute="trailing" secondItem="q3z-vm-he7" secondAttribute="trailing" constant="5" id="p2x-dj-2RH"/>
+                            <constraint firstItem="mWW-5s-ld8" firstAttribute="trailing" secondItem="C2t-NG-lvU" secondAttribute="trailing" constant="100" id="rah-8b-i25"/>
+                            <constraint firstItem="mWW-5s-ld8" firstAttribute="trailing" secondItem="3a0-kw-KPz" secondAttribute="trailing" constant="140" id="tFI-eA-viU"/>
                             <constraint firstItem="7OT-FC-b0Q" firstAttribute="leading" secondItem="mWW-5s-ld8" secondAttribute="leading" constant="38" id="vfq-nT-Sgi"/>
+                            <constraint firstItem="mWW-5s-ld8" firstAttribute="bottom" secondItem="3a0-kw-KPz" secondAttribute="bottom" constant="87" id="xpK-EN-eii"/>
+                            <constraint firstItem="mWW-5s-ld8" firstAttribute="trailing" secondItem="TiP-Ov-rqr" secondAttribute="trailing" constant="182" id="y0u-8W-Rwg"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="ArtistName" destination="7ws-Cs-jNw" id="RgC-Kb-ctM"/>
+                        <outlet property="Playbutton" destination="TiP-Ov-rqr" id="foI-rb-j2e"/>
+                        <outlet property="SliderVolume" destination="3a0-kw-KPz" id="02h-27-VIW"/>
+                        <outlet property="SongCover" destination="q3z-vm-he7" id="hAY-P7-aFl"/>
+                        <outlet property="SongName" destination="C2t-NG-lvU" id="CPd-Gl-Znz"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="xQh-XV-5VA" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="7465" y="955"/>
+            <point key="canvasLocation" x="7464.8854961832058" y="954.92957746478874"/>
         </scene>
         <!--Search View Controller-->
         <scene sceneID="YP7-Il-r4Y">
@@ -700,11 +733,7 @@
     </scenes>
     <resources>
         <image name="Deezer-logo" width="720" height="720"/>
-        <image name="arrow.backward" catalog="system" width="128" height="95"/>
-        <image name="arrow.right" catalog="system" width="128" height="95"/>
         <image name="arrowshape.left.fill" catalog="system" width="128" height="104"/>
-        <image name="play.fill" catalog="system" width="117" height="128"/>
-        <image name="pnl" width="664" height="664"/>
         <systemColor name="opaqueSeparatorColor">
             <color red="0.77647058823529413" green="0.77647058823529413" blue="0.78431372549019607" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
