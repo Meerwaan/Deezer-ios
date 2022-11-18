@@ -19,8 +19,11 @@ class ViewController: UIViewController {
 
     }
     func yourFuncHere() {
-        let LunchPage = storyboard?.instantiateViewController(identifier: "LuncherPage") as!LuncherPage;        LunchPage.modalPresentationStyle = .fullScreen
-        present(LunchPage,animated: true)
+        let storyboard = UIStoryboard(name: "Main", bundle: nil)
+                let navigation = storyboard.instantiateViewController(identifier: "Navigation")
+                navigation.modalPresentationStyle = .fullScreen
+                
+                self.present(navigation, animated: true, completion: nil)
     }
 
 }
