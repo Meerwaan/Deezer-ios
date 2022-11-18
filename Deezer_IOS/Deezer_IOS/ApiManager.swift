@@ -1,8 +1,8 @@
 //
 //  ApiManager.swift
-//  onzer
+//  Dazer
 //
-//  Created by Merwan Laouini on 05/04/2022.
+//  Created by Merwan Laouini on 14/11/2022.
 //
 
 import Foundation
