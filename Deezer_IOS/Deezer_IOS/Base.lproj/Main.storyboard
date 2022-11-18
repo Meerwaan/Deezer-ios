@@ -435,9 +435,7 @@
                             <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="3a0-kw-KPz">
                                 <rect key="frame" x="137" y="701" width="118" height="31"/>
                                 <connections>
-                                    <action selector="ChangeVo:" destination="n5i-C3-tYi" eventType="valueChanged" id="2Mx-ug-neF"/>
                                     <action selector="ChangeVol:" destination="n5i-C3-tYi" eventType="valueChanged" id="i4u-4o-4tq"/>
-                                    <action selector="PlaySong:" destination="n5i-C3-tYi" eventType="valueChanged" id="beu-G0-ibA"/>
                                 </connections>
                             </slider>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7OT-FC-b0Q">

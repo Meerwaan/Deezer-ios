@@ -20,7 +20,7 @@ class LunchSongViewController: UIViewController {
     @IBOutlet weak var SongCover: UIImageView!
     var audioPlayer: AVPlayer?
     
-    var size:CGFloat = 50
+    var size:CGFloat = 100
     
     @IBOutlet weak var SongName: UILabel!
     @IBOutlet weak var ArtistName: UILabel!
@@ -78,6 +78,8 @@ class LunchSongViewController: UIViewController {
     
     
     @IBAction func ChangeVol(_ sender: UISlider) {
+        let value = sender.value
+        audioPlayer?.volume = value
     
         }
 
